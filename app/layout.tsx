@@ -49,6 +49,7 @@ export const metadata: Metadata = {
     images: ["https://dollong.vercel.app/api/og"],
     creator: "@dollongid",
   },
+    generator: 'v0.dev'
 };
 
 export default function RootLayout({
