@@ -11,7 +11,7 @@ export default function HeroSection({ onNavClick }: HeroSectionProps) {
     <section id="home" className="px-8 py-16 lg:px-16 lg:py-24 bg-[#1a1a1a] min-h-screen flex items-center">
       <div className="max-w-4xl mx-auto">
         <div className="mb-8">
-          <div className="w-16 h-1 bg-[#f59e0b] mb-8"></div>
+          <div className="w-16 h-1 bg-[#ffda6b] mb-8"></div>
           <h1 className="text-5xl lg:text-7xl font-bold text-white mb-6">About</h1>
         </div>
 
@@ -33,19 +33,19 @@ export default function HeroSection({ onNavClick }: HeroSectionProps) {
               <h3 className="text-2xl font-semibold text-white mb-4">What I Do</h3>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-[#f59e0b] rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-[#ffda6b] rounded-full mt-2 flex-shrink-0"></div>
                   <span className="text-[#a0a0a0]">Full-stack web development</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-[#f59e0b] rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-[#ffda6b] rounded-full mt-2 flex-shrink-0"></div>
                   <span className="text-[#a0a0a0]">Mobile app development</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-[#f59e0b] rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-[#ffda6b] rounded-full mt-2 flex-shrink-0"></div>
                   <span className="text-[#a0a0a0]">UI/UX design implementation</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-[#f59e0b] rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-[#ffda6b] rounded-full mt-2 flex-shrink-0"></div>
                   <span className="text-[#a0a0a0]">Technical mentoring</span>
                 </li>
               </ul>
@@ -68,7 +68,7 @@ export default function HeroSection({ onNavClick }: HeroSectionProps) {
 
           <Button
             size="lg"
-            className="bg-[#f59e0b] text-[#1a1a1a] hover:bg-[#d97706] font-medium px-8 py-3"
+            className="bg-[#ffda6b] text-[#1a1a1a] hover:bg-[#e6c659] font-medium px-8 py-3"
             onClick={() => onNavClick("projects")}
           >
             View My Work

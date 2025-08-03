@@ -33,7 +33,7 @@ export default function Sidebar({ activeSection, onNavClick }: SidebarProps) {
                 className="w-full h-full object-cover rounded-2xl"
               />
             </div>
-            <div className="absolute bottom-2 right-2 w-6 h-6 bg-green-500 rounded-full border-4 border-[#2a2a2a]"></div>
+            <div className="absolute bottom-2 right-2 w-6 h-6 bg-[#ffda6b] rounded-full border-4 border-[#2a2a2a]"></div>
           </div>
           <h2 className="text-2xl font-bold text-white mb-2">Doltons Edward Nicholas</h2>
           <p className="text-[#a0a0a0] text-lg">Software Developer</p>
@@ -42,7 +42,7 @@ export default function Sidebar({ activeSection, onNavClick }: SidebarProps) {
         {/* Contact Info */}
         <div className="space-y-6 mb-8">
           <div className="flex items-center space-x-4">
-            <div className="w-10 h-10 bg-[#f59e0b] rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10 bg-[#ffda6b] rounded-lg flex items-center justify-center">
               <Mail className="h-5 w-5 text-[#1a1a1a]" />
             </div>
             <div>
@@ -52,7 +52,7 @@ export default function Sidebar({ activeSection, onNavClick }: SidebarProps) {
           </div>
 
           <div className="flex items-center space-x-4">
-            <div className="w-10 h-10 bg-[#f59e0b] rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10 bg-[#ffda6b] rounded-lg flex items-center justify-center">
               <Phone className="h-5 w-5 text-[#1a1a1a]" />
             </div>
             <div>
@@ -62,7 +62,7 @@ export default function Sidebar({ activeSection, onNavClick }: SidebarProps) {
           </div>
 
           <div className="flex items-center space-x-4">
-            <div className="w-10 h-10 bg-[#f59e0b] rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10 bg-[#ffda6b] rounded-lg flex items-center justify-center">
               <MapPin className="h-5 w-5 text-[#1a1a1a]" />
             </div>
             <div>
@@ -81,7 +81,7 @@ export default function Sidebar({ activeSection, onNavClick }: SidebarProps) {
                   onClick={() => onNavClick(item.id)}
                   className={`w-full text-left px-4 py-3 rounded-lg transition-all duration-200 ${
                     activeSection === item.id
-                      ? "bg-[#f59e0b] text-[#1a1a1a] font-medium"
+                      ? "bg-[#ffda6b] text-[#1a1a1a] font-medium"
                       : "text-[#a0a0a0] hover:text-white hover:bg-[#3a3a3a]"
                   }`}
                 >
@@ -94,13 +94,13 @@ export default function Sidebar({ activeSection, onNavClick }: SidebarProps) {
 
         {/* Social Links */}
         <div className="flex justify-center space-x-4">
-          <Button variant="ghost" size="icon" className="text-[#a0a0a0] hover:text-[#f59e0b] hover:bg-[#3a3a3a]">
+          <Button variant="ghost" size="icon" className="text-[#a0a0a0] hover:text-[#ffda6b] hover:bg-[#3a3a3a]">
             <Linkedin className="h-5 w-5" />
           </Button>
-          <Button variant="ghost" size="icon" className="text-[#a0a0a0] hover:text-[#f59e0b] hover:bg-[#3a3a3a]">
+          <Button variant="ghost" size="icon" className="text-[#a0a0a0] hover:text-[#ffda6b] hover:bg-[#3a3a3a]">
             <Github className="h-5 w-5" />
           </Button>
-          <Button variant="ghost" size="icon" className="text-[#a0a0a0] hover:text-[#f59e0b] hover:bg-[#3a3a3a]">
+          <Button variant="ghost" size="icon" className="text-[#a0a0a0] hover:text-[#ffda6b] hover:bg-[#3a3a3a]">
             <Mail className="h-5 w-5" />
           </Button>
         </div>

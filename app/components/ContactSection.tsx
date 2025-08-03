@@ -12,7 +12,7 @@ export default function ContactSection() {
     <section id="contact" className="px-8 py-16 lg:px-16 bg-[#1a1a1a] min-h-screen">
       <div className="max-w-4xl mx-auto">
         <div className="mb-12">
-          <div className="w-16 h-1 bg-[#f59e0b] mb-8"></div>
+          <div className="w-16 h-1 bg-[#ffda6b] mb-8"></div>
           <h1 className="text-5xl lg:text-7xl font-bold text-white mb-6">Contact</h1>
         </div>
 
@@ -26,7 +26,7 @@ export default function ContactSection() {
 
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-[#f59e0b] rounded-lg flex items-center justify-center">
+                <div className="w-12 h-12 bg-[#ffda6b] rounded-lg flex items-center justify-center">
                   <Mail className="h-6 w-6 text-[#1a1a1a]" />
                 </div>
                 <div>
@@ -36,7 +36,7 @@ export default function ContactSection() {
               </div>
 
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-[#f59e0b] rounded-lg flex items-center justify-center">
+                <div className="w-12 h-12 bg-[#ffda6b] rounded-lg flex items-center justify-center">
                   <Phone className="h-6 w-6 text-[#1a1a1a]" />
                 </div>
                 <div>
@@ -46,7 +46,7 @@ export default function ContactSection() {
               </div>
 
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-[#f59e0b] rounded-lg flex items-center justify-center">
+                <div className="w-12 h-12 bg-[#ffda6b] rounded-lg flex items-center justify-center">
                   <MapPin className="h-6 w-6 text-[#1a1a1a]" />
                 </div>
                 <div>
@@ -64,7 +64,7 @@ export default function ContactSection() {
                 <label className="block text-white font-medium mb-2">Name</label>
                 <input
                   type="text"
-                  className="w-full px-4 py-3 bg-[#3a3a3a] border border-[#4a4a4a] rounded-lg text-white placeholder-[#a0a0a0] focus:border-[#f59e0b] focus:outline-none"
+                  className="w-full px-4 py-3 bg-[#3a3a3a] border border-[#4a4a4a] rounded-lg text-white placeholder-[#a0a0a0] focus:border-[#ffda6b] focus:outline-none"
                   placeholder="Your name"
                 />
               </div>
@@ -72,7 +72,7 @@ export default function ContactSection() {
                 <label className="block text-white font-medium mb-2">Email</label>
                 <input
                   type="email"
-                  className="w-full px-4 py-3 bg-[#3a3a3a] border border-[#4a4a4a] rounded-lg text-white placeholder-[#a0a0a0] focus:border-[#f59e0b] focus:outline-none"
+                  className="w-full px-4 py-3 bg-[#3a3a3a] border border-[#4a4a4a] rounded-lg text-white placeholder-[#a0a0a0] focus:border-[#ffda6b] focus:outline-none"
                   placeholder="your.email@example.com"
                 />
               </div>
@@ -80,11 +80,11 @@ export default function ContactSection() {
                 <label className="block text-white font-medium mb-2">Message</label>
                 <textarea
                   rows={4}
-                  className="w-full px-4 py-3 bg-[#3a3a3a] border border-[#4a4a4a] rounded-lg text-white placeholder-[#a0a0a0] focus:border-[#f59e0b] focus:outline-none resize-none"
+                  className="w-full px-4 py-3 bg-[#3a3a3a] border border-[#4a4a4a] rounded-lg text-white placeholder-[#a0a0a0] focus:border-[#ffda6b] focus:outline-none resize-none"
                   placeholder="Tell me about your project..."
                 ></textarea>
               </div>
-              <Button type="submit" className="w-full bg-[#f59e0b] text-[#1a1a1a] hover:bg-[#d97706] font-medium py-3">
+              <Button type="submit" className="w-full bg-[#ffda6b] text-[#1a1a1a] hover:bg-[#e6c659] font-medium py-3">
                 Send Message
               </Button>
             </form>
