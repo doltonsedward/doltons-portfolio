@@ -1,30 +1,19 @@
-# Doltons portfolio design
+# Doltons Edward – Full Stack Developer
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+Hi there 👋 I'm **Doltons Edward**, a passionate and experienced Full Stack Developer with over 3 years of experience building scalable web and mobile applications.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/doltonsedwards-projects/v0-doltons-portfolio-design)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/9v4Xsps2en0)
+🔧 Tech Stack:  
+React.js • Node.js • React Native • Firebase • PostgreSQL • TypeScript
 
-## Overview
+💼 Experience Highlights:
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+- **Frontend Developer** at PT. Nirvana Indonesia Yoga
+- **Full Stack Engineer** at Kelas Fitness
+- **Mobile App Developer** using React Native
+- **Mentor & Learning Support** at Skilvul
 
-## Deployment
+I specialize in creating seamless user experiences and clean, maintainable code — from concept to deployment.
 
-Your project is live at:
+---
 
-**[https://vercel.com/doltonsedwards-projects/v0-doltons-portfolio-design](https://vercel.com/doltonsedwards-projects/v0-doltons-portfolio-design)**
-
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.dev/chat/projects/9v4Xsps2en0](https://v0.dev/chat/projects/9v4Xsps2en0)**
-
-## How It Works
-
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+[![Hire Me](https://img.shields.io/badge/Hire%20Me-On%20LinkedIn-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/doltons-edward-nicholas-p/)
