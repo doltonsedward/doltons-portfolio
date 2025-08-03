@@ -15,7 +15,7 @@ export default function HeroSection({ onNavClick }: HeroSectionProps) {
           <div className="flex-shrink-0">
             <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-white shadow-lg">
               <Image
-                src="/placeholder.svg?height=256&width=256"
+                src="/doltons.jpeg?height=256&width=256"
                 alt="Doltons Edward Nicholas"
                 width={256}
                 height={256}
@@ -32,9 +32,12 @@ export default function HeroSection({ onNavClick }: HeroSectionProps) {
               </span>
             </h1>
             <p className="text-xl text-gray-600 mb-6 italic">
-              "Code is poetry written in logic, where every line tells a
-              story of possibility."
+              "If I think I can, I can."
             </p>
+            {/* <p className="text-xl text-gray-600 mb-6 italic">
+              "Code is poetry written in logic, where every line tells a story
+              of possibility." -- quote 2
+            </p> */}
             <p className="text-lg text-gray-700 mb-8">
               Full Stack Developer & Creative Problem Solver
             </p>
@@ -50,4 +53,4 @@ export default function HeroSection({ onNavClick }: HeroSectionProps) {
       </div>
     </section>
   );
-} 
+}

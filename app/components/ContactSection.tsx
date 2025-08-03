@@ -1,8 +1,18 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
 
 export default function ContactSection() {
+  const router = useRouter();
+
+  const handleGetInTouch = () => {
+    window.open(
+      "https://www.linkedin.com/in/doltons-edward-nicholas-p/",
+      "_blank"
+    );
+  };
+
   return (
     <section
       id="contact"
@@ -14,6 +24,7 @@ export default function ContactSection() {
           Have a project in mind? I'd love to hear about it.
         </p>
         <Button
+          onClick={handleGetInTouch}
           size="lg"
           variant="outline"
           className="border-white text-white hover:bg-white hover:text-gray-900 bg-transparent"
@@ -23,4 +34,4 @@ export default function ContactSection() {
       </div>
     </section>
   );
-} 
+}
