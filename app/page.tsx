@@ -5,7 +5,7 @@ import MobileMenu from "./components/MobileMenu";
 import Sidebar from "./components/Sidebar";
 import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
-import ProjectsSection from "./components/ProjectsSection";
+import ProjectsSection from "./components/ProjectSection";
 import ExperienceSection from "./components/ExperienceSection";
 import ContactSection from "./components/ContactSection";
 
