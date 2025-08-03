@@ -1,3 +1,6 @@
+"use client"
+
+import { useState, useEffect } from "react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -5,6 +8,49 @@ import { Badge } from "@/components/ui/badge"
 import { Github, Linkedin, Mail, ExternalLink, Menu } from "lucide-react"
 
 export default function Portfolio() {
+  const [activeSection, setActiveSection] = useState("home")
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ["home", "about", "projects", "experience", "contact"]
+      const scrollPosition = window.scrollY + 100
+
+      for (const section of sections) {
+        const element = document.getElementById(section)
+        if (element) {
+          const offsetTop = element.offsetTop
+          const offsetHeight = element.offsetHeight
+
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setActiveSection(section)
+            break
+          }
+        }
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll)
+    handleScroll() // Call once to set initial state
+
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
+  const handleNavClick = (sectionId: string) => {
+    setActiveSection(sectionId)
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
+  const navItems = [
+    { id: "home", label: "Home" },
+    { id: "about", label: "About" },
+    { id: "projects", label: "Projects" },
+    { id: "experience", label: "Experience" },
+    { id: "contact", label: "Contact" },
+  ]
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Mobile Menu Button */}
@@ -23,32 +69,21 @@ export default function Portfolio() {
           </div>
 
           <nav className="flex-1">
-            <ul className="space-y-4">
-              <li>
-                <a href="#home" className="text-gray-700 hover:text-gray-900 transition-colors">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#about" className="text-gray-700 hover:text-gray-900 transition-colors">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#projects" className="text-gray-700 hover:text-gray-900 transition-colors">
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a href="#experience" className="text-gray-700 hover:text-gray-900 transition-colors">
-                  Experience
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="text-gray-700 hover:text-gray-900 transition-colors">
-                  Contact
-                </a>
-              </li>
+            <ul className="space-y-2">
+              {navItems.map((item) => (
+                <li key={item.id}>
+                  <button
+                    onClick={() => handleNavClick(item.id)}
+                    className={`w-full text-left px-4 py-3 rounded-lg transition-all duration-200 ${
+                      activeSection === item.id
+                        ? "bg-gray-900 text-white shadow-md"
+                        : "text-gray-700 hover:text-gray-900 hover:bg-gray-100"
+                    }`}
+                  >
+                    {item.label}
+                  </button>
+                </li>
+              ))}
             </ul>
           </nav>
 
@@ -93,7 +128,7 @@ export default function Portfolio() {
                   "Code is poetry written in logic, where every line tells a story of possibility."
                 </p>
                 <p className="text-lg text-gray-700 mb-8">Full Stack Developer & Creative Problem Solver</p>
-                <Button size="lg" className="bg-gray-900 hover:bg-gray-800">
+                <Button size="lg" className="bg-gray-900 hover:bg-gray-800" onClick={() => handleNavClick("projects")}>
                   View My Work
                 </Button>
               </div>
