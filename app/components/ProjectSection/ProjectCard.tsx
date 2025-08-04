@@ -29,7 +29,7 @@ const ProjectCard = ({ index }: { index: number }) => (
             best practices.
           </p>
           <div className="flex justify-between items-center">
-            <div className="flex space-x-2">
+            <div className="space-x-2 flex-50">
               <Badge variant="outline" className="text-xs">
                 React
               </Badge>
