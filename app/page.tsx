@@ -57,7 +57,7 @@ export default function Portfolio() {
       <main className="lg:ml-64 min-h-screen">
         <HeroSection onNavClick={handleNavClick} />
         <AboutSection />
-        <ProjectsSection />
+        {/* <ProjectsSection /> */}
         <ExperienceSection />
         <ContactSection />
       </main>
