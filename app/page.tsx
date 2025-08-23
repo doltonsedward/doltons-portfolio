@@ -7,6 +7,7 @@ import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectSection";
 import ExperienceSection from "./components/ExperienceSection";
+import TalksSection from "./components/TalksSection";
 import ContactSection from "./components/ContactSection";
 
 export default function Portfolio() {
@@ -14,7 +15,14 @@ export default function Portfolio() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "projects", "experience", "contact"];
+      const sections = [
+        "home",
+        "about",
+        "projects",
+        "experience",
+        "talks",
+        "contact",
+      ];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -58,6 +66,7 @@ export default function Portfolio() {
         <HeroSection onNavClick={handleNavClick} />
         <AboutSection />
         {/* <ProjectsSection /> */}
+        <TalksSection />
         <ExperienceSection />
         <ContactSection />
       </main>

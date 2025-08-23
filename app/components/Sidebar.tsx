@@ -13,6 +13,7 @@ export default function Sidebar({ activeSection, onNavClick }: SidebarProps) {
     { id: "home", label: "Home" },
     { id: "about", label: "About" },
     { id: "projects", label: "Projects" },
+    { id: "talks", label: "Talks & Teaching" },
     { id: "experience", label: "Experience" },
     { id: "contact", label: "Contact" },
   ];
@@ -58,4 +59,4 @@ export default function Sidebar({ activeSection, onNavClick }: SidebarProps) {
       </div>
     </aside>
   );
-} 
+}
