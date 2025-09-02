@@ -4,16 +4,17 @@ import { Calendar, Clock, Users, Video } from "lucide-react";
 import { formatDate } from "../utils";
 import { formatDuration } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
-import { TalkDataTypes } from "@/app/talks/types";
+import { FilteredTalkData } from "@/app/talks/types";
 
 type CardContentPropsType = {
-  description: TalkDataTypes["description"];
-  datetime: TalkDataTypes["datetime"];
-  duration: TalkDataTypes["duration"];
-  audience: TalkDataTypes["audience"];
-  attendees: TalkDataTypes["attendees"];
-  platform: TalkDataTypes["platform"];
-  topics: TalkDataTypes["topics"];
+  description: FilteredTalkData["description"];
+  datetime: FilteredTalkData["datetime"];
+  duration: FilteredTalkData["duration"];
+  audience: FilteredTalkData["audience"];
+  attendees: FilteredTalkData["attendees"];
+  platform: FilteredTalkData["platform"];
+  topics: FilteredTalkData["topics"];
+  status: FilteredTalkData["status"];
 };
 
 const CardContent = ({
@@ -24,6 +25,7 @@ const CardContent = ({
   attendees,
   platform,
   topics,
+  status,
 }: CardContentPropsType) => {
   return (
     <CoreCardContent className="flex-1 pb-4">

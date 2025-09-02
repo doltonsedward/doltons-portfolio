@@ -35,6 +35,7 @@ const TalkCard = ({ talk }: TalkCardPropsType) => (
       attendees={talk.attendees}
       platform={talk.platform}
       topics={talk.topics}
+      status={talk.status}
     />
 
     <CardFooter

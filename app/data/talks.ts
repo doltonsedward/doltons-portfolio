@@ -6,70 +6,7 @@ dayjs.extend(isBetween);
 
 export const TALKS_DATA: TalkDataTypes[] = [
   {
-    id: "1",
-    title: "Membangun Karir Sukses Sebagai Web Developer",
-    shortDesc:
-      "Cari tahu realita dan strategi membangun karier sebagai web developer bersama Doltons Edward di sesi webinar ini.",
-    description:
-      "Apakah berkarier sebagai web developer sesulit yang dibayangkan? Dalam webinar ini, Doltons Edward (Coding Mentor di Skilvul) akan membagikan pengalaman dan pengetahuan seputar perjalanan karier seorang web developer, mulai dari tantangan awal, keterampilan yang perlu dikuasai, hingga tips praktis menghadapi persaingan industri. Sesi ini juga akan menjadi ruang interaktif untuk menjawab pertanyaan peserta seputar roadmap karier dan pengembangan diri sebagai developer.",
-    type: "webinar",
-    datetime: "2023-10-05T19:00:00",
-    duration: 5400,
-    audience: "Mahasiswa & Calon Web Developers",
-    platform: "Zoom",
-    registrationUrl: "https://bit.ly/skilhub-irichundip",
-    topics: ["Career", "Web Development", "Frontend", "Backend"],
-    bannerImage:
-      "https://assets.skilvul.com/webinarSession/skilhub-x-i-rich-undip-membangun-karier-sukses-sebagai-web-developer-details-1695714477710.jpg",
-    cardImage:
-      "https://skilvul-prod-01.s3.ap-southeast-1.amazonaws.com/webinarSession/Membangun-Karier-Sukses-Sebagai-Web-Developer.jpg",
-    bannerAlt: "Webinar membangun karier sukses sebagai web developer",
-    attendees: 100,
-  },
-  {
-    id: "2",
-    title: "Why Should You Learn Typescript",
-    shortDesc:
-      "Kenalan dengan TypeScript, perbedaannya dengan JavaScript, dan cara memulainya.",
-    description:
-      "Talk ini mengangkat topik 'Why Should You Learn TypeScript' bersama Doltons Edward (Learning Support Skilvul). Peserta akan diajak memahami apa itu TypeScript, mengapa TypeScript menjadi penting dalam pengembangan modern, serta bagaimana perbedaannya dengan JavaScript. Sesi ini juga akan membahas langkah awal belajar TypeScript disertai dengan studi kasus sederhana agar peserta bisa langsung merasakan manfaatnya.",
-    type: "webinar",
-    datetime: "2022-05-20T19:00:00",
-    duration: 5400,
-    audience: "Frontend Developers & SkilHub Members",
-    platform: "Zoom",
-    registrationUrl: "https://bit.ly/Join-SkilHub",
-    topics: ["TypeScript", "JavaScript", "Frontend Development"],
-    bannerImage:
-      "https://skilvul-prod-01.s3.ap-southeast-1.amazonaws.com/webinarSession/why-should-you-learn-typescript.jpg",
-    cardImage:
-      "https://assets.skilvul.com/webinarSession/skilmate-talk-why-should-you-learn-typescript-details-1652773624046.jpg",
-    bannerAlt: "Webinar banner Why Should You Learn TypeScript",
-    attendees: 54,
-  },
-  {
-    id: "3",
-    title: "Roadmap to Web Development Mastery: A Comprehensive Guide",
-    shortDesc:
-      "Panduan roadmap lengkap untuk menjadi web developer profesional.",
-    description:
-      "Sesi webinar kolaborasi SkilHub x HIMSI UMDP ini akan membahas roadmap komprehensif menuju penguasaan web development. Mulai dari keterampilan dasar, tools penting, hingga teknologi terbaru yang perlu dipelajari untuk mencapai level profesional. Doltons Edward akan memandu peserta memahami tahapan belajar, strategi efisien, serta tips menghadapi dinamika industri teknologi.",
-    type: "webinar",
-    datetime: "2023-08-18T19:00:00",
-    duration: 5400,
-    audience: "SkilHub x HIMSI UMDP",
-    platform: "Zoom",
-    registrationUrl: "https://bit.ly/SkilhubXHIMSIUMDP",
-    topics: ["Roadmap", "Web Development", "Career"],
-    bannerImage:
-      "https://assets.skilvul.com/webinarSession/skilhub-x-himsi-umdp-roadmap-to-web-development-mastery-a-comprehensive-guide-1689581674201.jpg",
-    cardImage:
-      "https://skilvul-prod-01.s3.ap-southeast-1.amazonaws.com/webinarSession/Roadmap-to-Web-Development-Mastery-A-Comprehensive-Guide.jpg",
-    bannerAlt: "Webinar roadmap to web development mastery",
-    attendees: 354,
-  },
-  {
-    id: "4",
+    id: "cmf2n209q000704jmgjwaewel",
     title: "Membangun Personal Branding Melalui Website sebagai Mahasiswa IT",
     shortDesc:
       "Pelajari cara membangun personal branding profesional melalui website untuk mahasiswa IT.",
@@ -91,7 +28,93 @@ export const TALKS_DATA: TalkDataTypes[] = [
     attendees: 290,
   },
   {
-    id: "5",
+    id: "cmf2n1ngf000104jm8c481e6e",
+    title: "Why Should You Learn Typescript",
+    shortDesc:
+      "Kenalan dengan TypeScript, perbedaannya dengan JavaScript, dan cara memulainya.",
+    description:
+      "Talk ini mengangkat topik 'Why Should You Learn TypeScript' bersama Doltons Edward (Mentor Skilvul). Peserta akan diajak memahami apa itu TypeScript, mengapa TypeScript menjadi penting dalam pengembangan modern, serta bagaimana perbedaannya dengan JavaScript. Sesi ini juga akan membahas langkah awal belajar TypeScript disertai dengan studi kasus sederhana agar peserta bisa langsung merasakan manfaatnya.",
+    type: "webinar",
+    datetime: "2022-05-20T19:00:00",
+    duration: 5400,
+    audience: "Frontend Developers & SkilHub Members",
+    platform: "Zoom",
+    registrationUrl: "https://bit.ly/Join-SkilHub",
+    topics: ["TypeScript", "JavaScript", "Frontend Development"],
+    bannerImage:
+      "https://skilvul-prod-01.s3.ap-southeast-1.amazonaws.com/webinarSession/why-should-you-learn-typescript.jpg",
+    cardImage:
+      "https://assets.skilvul.com/webinarSession/skilmate-talk-why-should-you-learn-typescript-details-1652773624046.jpg",
+    bannerAlt: "Webinar banner Why Should You Learn TypeScript",
+    attendees: 54,
+  },
+  {
+    id: "cmf4abc0000104jm8c481e6e",
+    title: "Malam Minggu Happy: Mengenal Cyber Security",
+    shortDesc:
+      "Sesi santai di malam minggu untuk mengenal dasar-dasar cyber security bersama Skilvul dan GDSC Universitas Hasanudin.",
+    description:
+      "Talk ini mengangkat topik 'Malam Minggu Happy: Mengenal Cyber Security' hasil kolaborasi Skilvul x GDSC Universitas Hasanudin. Peserta akan diperkenalkan pada konsep dasar cyber security, tantangan keamanan digital masa kini, serta praktik baik menjaga keamanan diri di dunia maya. Sesi ini dikemas secara ringan agar tetap seru di malam minggu.",
+    type: "webinar",
+    datetime: "2023-11-04T19:00:00",
+    duration: 5400,
+    audience: "Skilvul x GDSC Universitas Hasanudin",
+    platform: "Zoom",
+    registrationUrl:
+      "https://skilvul.com/events/skilvul-x-gdsc-universitas-hasanudin-x-coder-institute-malam-minggu-happy-mengenal-cyber-security/",
+    topics: ["Cyber Security", "Digital Safety", "Awareness"],
+    bannerImage:
+      "https://assets.skilvul.com/webinarSession/skilvul-x-gdsc-universitas-hasanudin-x-coder-institute-malam-minggu-happy-mengenal-cyber-security-details-1698051448740.jpg",
+    cardImage:
+      "https://assets.skilvul.com/webinarSession/skilvul-x-gdsc-universitas-hasanudin-x-coder-institute-malam-minggu-happy-mengenal-cyber-security-details-1698051448740.jpg",
+    bannerAlt: "Webinar banner Malam Minggu Happy: Mengenal Cyber Security",
+    attendees: 204,
+  },
+  {
+    id: "cmf2n1gc5000004jm2hkngzc0",
+    title: "Membangun Karir Sukses Sebagai Web Developer",
+    shortDesc:
+      "Cari tahu realita dan strategi membangun karier sebagai web developer bersama Doltons Edward di sesi webinar ini.",
+    description:
+      "Apakah berkarier sebagai web developer sesulit yang dibayangkan? Dalam webinar ini, Doltons Edward (Coding Mentor di Skilvul) akan membagikan pengalaman dan pengetahuan seputar perjalanan karier seorang web developer, mulai dari tantangan awal, keterampilan yang perlu dikuasai, hingga tips praktis menghadapi persaingan industri. Sesi ini juga akan menjadi ruang interaktif untuk menjawab pertanyaan peserta seputar roadmap karier dan pengembangan diri sebagai developer.",
+    type: "webinar",
+    datetime: "2023-10-05T19:00:00",
+    duration: 5400,
+    audience: "Mahasiswa & Calon Web Developers",
+    platform: "Zoom",
+    registrationUrl: "https://bit.ly/skilhub-irichundip",
+    topics: ["Career", "Web Development", "Frontend", "Backend"],
+    bannerImage:
+      "https://assets.skilvul.com/webinarSession/skilhub-x-i-rich-undip-membangun-karier-sukses-sebagai-web-developer-details-1695714477710.jpg",
+    cardImage:
+      "https://skilvul-prod-01.s3.ap-southeast-1.amazonaws.com/webinarSession/Membangun-Karier-Sukses-Sebagai-Web-Developer.jpg",
+    bannerAlt: "Webinar membangun karier sukses sebagai web developer",
+    attendees: 100,
+  },
+
+  {
+    id: "cmf2n1qr4000204jm1o2j1t6j",
+    title: "Roadmap to Web Development Mastery: A Comprehensive Guide",
+    shortDesc:
+      "Panduan roadmap lengkap untuk menjadi web developer profesional.",
+    description:
+      "Sesi webinar kolaborasi SkilHub x HIMSI UMDP ini akan membahas roadmap komprehensif menuju penguasaan web development. Mulai dari keterampilan dasar, tools penting, hingga teknologi terbaru yang perlu dipelajari untuk mencapai level profesional. Doltons Edward akan memandu peserta memahami tahapan belajar, strategi efisien, serta tips menghadapi dinamika industri teknologi.",
+    type: "webinar",
+    datetime: "2023-08-18T19:00:00",
+    duration: 5400,
+    audience: "SkilHub x HIMSI UMDP",
+    platform: "Zoom",
+    registrationUrl: "https://bit.ly/SkilhubXHIMSIUMDP",
+    topics: ["Roadmap", "Web Development", "Career"],
+    bannerImage:
+      "https://assets.skilvul.com/webinarSession/skilhub-x-himsi-umdp-roadmap-to-web-development-mastery-a-comprehensive-guide-1689581674201.jpg",
+    cardImage:
+      "https://skilvul-prod-01.s3.ap-southeast-1.amazonaws.com/webinarSession/Roadmap-to-Web-Development-Mastery-A-Comprehensive-Guide.jpg",
+    bannerAlt: "Webinar roadmap to web development mastery",
+    attendees: 354,
+  },
+  {
+    id: "cmf2n25op000804jmbpqtdwn6",
     title: "Exploring the World of Web Development",
     shortDesc: "Eksplorasi dunia web development dan peluang yang bisa digali.",
     description:
@@ -111,7 +134,7 @@ export const TALKS_DATA: TalkDataTypes[] = [
     attendees: 196,
   },
   {
-    id: "6",
+    id: "cmf2n2axw000904jm72bu18id",
     title: "Unveiling the Career Opportunity of Web Development",
     shortDesc: "Temukan peluang karier menarik di bidang web development.",
     description:
@@ -131,7 +154,7 @@ export const TALKS_DATA: TalkDataTypes[] = [
     attendees: 12,
   },
   {
-    id: "7",
+    id: "cmf2n2j6j000a04jm526k9vj6",
     title: "Learning About Tailwind Framework",
     shortDesc: "Belajar Tailwind CSS Framework untuk membangun website modern.",
     description:
