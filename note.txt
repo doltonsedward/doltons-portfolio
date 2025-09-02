@@ -1,0 +1,88 @@
+saya akan pny talks-data yg berisi array of object. kurang lebih seperti ini 1 item ny
+
+  {
+    id: "1",
+    title: "Building Modern React Applications with Next.js",
+    shortDesc:
+      "Learn Next.js 14 features including App Router, Server Components, and performance optimization for production apps.",
+    description:
+      "A comprehensive webinar covering the latest features of Next.js 14, including App Router, Server Components, and performance optimization techniques for production applications. We'll dive deep into the new paradigms of React Server Components, explore the enhanced routing system, and discuss best practices for building scalable, performant web applications. You'll learn about data fetching strategies, caching mechanisms, and deployment optimization techniques that will help you build production-ready applications.",
+    type: "webinar",
+    status: "upcoming",
+    date: "2024-02-15",
+    duration: 3600, // jumlah detik
+    audience: "Frontend Developers",
+    platform: "Zoom",
+    registrationUrl: "https://example.com/register",
+    topics: [
+      "Next.js",
+      "React",
+      "Server Components",
+      "Performance",
+      "TypeScript",
+    ],
+    bannerImage:
+      "https://media.discordapp.net/attachments/936560773960962052/1265959769479581757/Poster_codeLab_-_SkilHub_Community_2.png?ex=68aa2ea9&is=68a8dd29&hm=ffe267c74555fd03d06569387142e53496b1810e5db1c86d0dc3ad134ef5c871&=&format=webp&quality=lossless&width=744&height=930",
+    bannerAlt: "Modern tech webinar banner - Steve Johnson on Unsplash",
+  }
+
+cobalah update array of object nya sesuai dengan list data yang akan saya kasih di bawah. cek jg kembali properti yg lain, yg tdk saya isi itu saya berharap km jg bantu isi sesuai dengan konteksny
+pastikan bannerImage ada, jika tdk ada, cobalah ambil link gambar dr google atau dari manapun. jangan ambil dari cardImage krn ukuran ny beda:
+1.
+title: Membangun Karir Sukses Sebagai Web Developer
+description (cobalah enhance): Apakah berkarier sebagai web developer sesulit yang dibayangkan? Cari tahu jawabannya bersama Doltons Edward selaku Coding Mentor di Skilvul yang akan mencoba membagikan pengetahuan dan menjawab pertanyaan kamu seputar berkarier sebagai web developer di sesi webinar kali ini. 
+registrationUrl: https://bit.ly/skilhub-irichundip
+date: 2023-10-05
+duration: 5400
+bannerImage: https://assets.skilvul.com/webinarSession/skilhub-x-i-rich-undip-membangun-karier-sukses-sebagai-web-developer-details-1695714477710.jpg
+cardImage: https://skilvul-prod-01.s3.ap-southeast-1.amazonaws.com/webinarSession/Membangun-Karier-Sukses-Sebagai-Web-Developer.jpg
+
+2. 
+title: Why Should You Learn Typescript
+description (please enhance): Talk akan membawa topik diskusi "Why Should You Learn Typescript” bersama Doltons Edward, Learning Support Skilvul. Dalam sesi ini, kamu akan diajak kenalan dengan Typescript, seperti apa itu typescript, apa bedanya dengan javascript, bagaimana kita bisa memulai, dan juga akan membahas simple study case terkait typescript.
+date: 2022-05-20
+duration: 5400
+bannerImage: https://skilvul-prod-01.s3.ap-southeast-1.amazonaws.com/webinarSession/why-should-you-learn-typescript.jpg
+cardImage: https://assets.skilvul.com/webinarSession/skilmate-talk-why-should-you-learn-typescript-details-1652773624046.jpg
+registrationUrl: bit.ly/Join-SkilHub
+
+3.
+title: Roadmap to Web Development Mastery: A Comprehensive Guide
+date: 2023-08-18
+duration: 5400
+audience: SkilHub x HIMSI UMDP
+bannerImage: https://assets.skilvul.com/webinarSession/skilhub-x-himsi-umdp-roadmap-to-web-development-mastery-a-comprehensive-guide-1689581674201.jpg
+cardImage: https://skilvul-prod-01.s3.ap-southeast-1.amazonaws.com/webinarSession/Roadmap-to-Web-Development-Mastery-A-Comprehensive-Guide.jpg
+registrationUrl: https://bit.ly/SkilhubXHIMSIUMDP
+
+4. 
+title: Membangun Personal Branding Melalui Website sebagai Mahasiswa IT
+registrationUrl: http://bit.ly/skilhub-itdec
+date: 2023-09-07
+duration: 7200
+audience: Skilhub x ITDEC Polinema Students
+description (please enhance): Sebagai seorang mahasiswa di bidang IT, sangat penting untuk kamu mengetahui kiat-kiat membangun personal branding yang baik dan profesional melalui website untuk kebutuhan karier kamu nanti ke depannya. Jangan lewatkan sesi webinar menarik ini bersama Dolton Edward (Mentor Coding Skilvul) dan Satrio Binusa Suryadi, S.S, M.Pd (Dosen Teknologi Informasi Politeknik Negeri Malang) yang akan hadir membagikan pengetahuan untuk para Sobat Skilvul. 
+bannerImage: https://assets.skilvul.com/webinarSession/skilhub-x-itdec-polinema-membangun-personal-branding-melalui-website-sebagai-mahasiswa-it-1693360310187.jpg
+cardImage: https://skilvul-prod-01.s3.ap-southeast-1.amazonaws.com/webinarSession/Membangun-Personal-Branding-Melalui-Website-sebagai-Mahasiswa-IT.jpg
+
+5.
+title: Exploring the World of Web Development
+registrationUrl: https://bit.ly/codeLab-8
+audience: Skilhub CodeLab Members
+cardImage: https://skilvul-prod-01.s3.ap-southeast-1.amazonaws.com/webinarSession/codeLab-Eps-8-Exploring-the-World-of-Web-Development.png
+date: 2024-07-31
+duration: 5400
+
+6.
+title: Unveiling the Career Opportunity of Web Development
+cardImage: https://skilvul-prod-01.s3.ap-southeast-1.amazonaws.com/webinarSession/Unveiling-the-Career-Opportunity-of-Web-Development.png
+audience: Skilvul CommuniTalks Members
+date: 2023-07-14
+duration: 3600
+
+7. 
+title: Learning About Tailwind Framework
+registrationUrl: https://bit.ly/codeLab-6
+cardImage: https://skilvul-prod-01.s3.ap-southeast-1.amazonaws.com/webinarSession/codeLab-Eps-6-Learning-About-Tailwind-Framework.jpeg
+date: 2024-05-28
+duration: 5400

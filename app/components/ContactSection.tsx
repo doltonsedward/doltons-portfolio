@@ -1,11 +1,8 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { useRouter } from "next/navigation";
 
 export default function ContactSection() {
-  const router = useRouter();
-
   const handleGetInTouch = () => {
     window.open(
       "https://www.linkedin.com/in/doltons-edward-nicholas-p/",
