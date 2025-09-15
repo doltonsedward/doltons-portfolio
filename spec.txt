@@ -1,0 +1,46 @@
+About the job
+Are you a highly skilled React Native developer with a passion for making a real difference in people's lives? Do you dream of using your coding superpowers to revolutionize the healthcare industry? If so, we want YOU to join our team at Theratech!
+
+
+About Theratech:
+
+Theratech is an innovative tech startup on a mission to disrupt the allied healthcare industry by leveraging cutting-edge technology. We're closing the gap between service providers and clients, making therapy accessible, flexible, and efficient for everyone. Our all-in-one platform simplifies and enhances the therapy process, empowering therapists, clients, and stakeholders to achieve better outcomes.
+We're looking for a talented and passionate React Native Developer to help us bring our vision to life!
+What You'll Do:
+As a React Developer at Theratech, you'll play a critical role in shaping our game-changing platform. You'll be responsible for:
+Developing high-quality, responsive UI components using React.js
+Developing mobile apps using React Native
+Collaborating with our interdisciplinary team of developers, therapists, and allied health professionals
+Building and optimizing reusable code and libraries to ensure our platform's performance and scalability
+Ensuring a seamless user experience with top-notch security and data protection
+Staying up-to-date on emerging technologies and trends to help us stay at the forefront of innovation
+
+
+What You'll Bring:
+
+Experience developing apps using React Native
+Familiar with Native modules in iOS and Android
+Experience using AI Coding agents to accelerate time to market
+A deep understanding of React.js and its core principles
+Strong proficiency in JavaScript, including DOM manipulation and the JavaScript object model
+Familiarity with RESTful APIs and modern authorization mechanisms
+A passion for clean, efficient code and an eagerness to learn new technologies
+Excellent communication skills and a team player mentality
+A strong desire to make a meaningful impact on the lives of countless individuals
+
+
+Why Join Theratech?
+
+At Theratech, we believe in the power of technology to transform lives. By joining our team, you'll be part of a passionate group of individuals dedicated to making a real-world impact. We offer a supportive, collaborative work environment where your ideas and expertise will be valued, and your hard work will directly contribute to the success of our platform.
+
+
+Perks & Benefits:
+
+Competitive salary
+Flexible work arrangements and a healthy work-life balance
+An inclusive, collaborative, and supportive company culture
+Opportunities for professional growth and development
+The satisfaction of knowing your work is making a difference in the lives of millions
+
+
+Ready to join our mission and revolutionize the allied healthcare industry? Apply now and help us make allied health rehabilitation and therapy accessible, flexible, and efficient for everyone!

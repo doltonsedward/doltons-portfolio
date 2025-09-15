@@ -1,9 +1,4 @@
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { CarouselItem } from "@/components/ui/carousel";
-import { ExternalLink, Github } from "lucide-react";
 import BaseProjectCard from "@/app/components/ProjectCard";
 import { ProjectStatusType } from "@/app/project/types";
 
