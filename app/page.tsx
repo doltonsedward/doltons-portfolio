@@ -10,19 +10,20 @@ import ExperienceSection from "./components/ExperienceSection";
 import TalksSection from "./components/TalksSection";
 import ContactSection from "./components/ContactSection";
 
+const sections = [
+  "home",
+  "about",
+  "projects",
+  "experience",
+  "talks",
+  "contact",
+];
+
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = [
-        "home",
-        "about",
-        "projects",
-        "experience",
-        "talks",
-        "contact",
-      ];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -43,7 +44,7 @@ export default function Portfolio() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Call once to set initial state
+    handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -61,11 +62,10 @@ export default function Portfolio() {
       <MobileMenu />
       <Sidebar activeSection={activeSection} onNavClick={handleNavClick} />
 
-      {/* Main Content */}
       <main className="lg:ml-64 min-h-screen">
         <HeroSection onNavClick={handleNavClick} />
         <AboutSection />
-        {/* <ProjectsSection /> */}
+        <ProjectsSection />
         <TalksSection />
         <ExperienceSection />
         <ContactSection />

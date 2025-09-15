@@ -8,10 +8,10 @@ import {
   getStatusColor,
   getTypeColor,
 } from "@/views/TalkDetail/utils/talkHelpers";
-import { TalkDataTypes } from "@/app/talks/types";
+import { FilteredTalkData } from "@/app/talks/types";
 
 interface TalkHeaderProps {
-  talk: TalkDataTypes;
+  talk: FilteredTalkData;
 }
 
 export default function TalkHeader({ talk }: TalkHeaderProps) {
