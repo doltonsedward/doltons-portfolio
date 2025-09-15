@@ -34,9 +34,14 @@ export type ProjectDataType = {
   id: number;
   title: string;
   shortDesc: string;
+  fullDesc: string;
   stack: string[];
   githubLink: string;
   linkToProject: string;
   image: string;
   status: ProjectStatusType;
+  duration: string;
+  year: string;
+  challenges: string[];
+  keyFeatures: string[];
 };

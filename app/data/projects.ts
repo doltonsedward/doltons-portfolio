@@ -6,100 +6,61 @@ const PROJECTS_DATA: ProjectDataType[] = [
     title: "E-Commerce Platform",
     shortDesc:
       "A full-stack e-commerce platform with payment integration and real-time inventory management.",
-    stack: ["React", "Node.js", "PostgreSQL", "Stripe"],
+    fullDesc:
+      "This comprehensive e-commerce platform was built to handle high-traffic scenarios with real-time inventory management, secure payment processing, and an intuitive admin dashboard. The project showcases advanced React patterns, efficient state management, and scalable backend architecture.\n\nKey features include user authentication, product catalog management, shopping cart functionality, order tracking, payment integration with Stripe, and comprehensive analytics dashboard for store owners.",
+    stack: ["React", "Node.js", "PostgreSQL", "Stripe", "Redis", "Docker"],
     githubLink: "https://github.com/example/ecommerce",
     linkToProject: "https://ecommerce-demo.com",
-    image: "/placeholder.svg?height=300&width=400&query=ecommerce platform",
+    image:
+      "/placeholder.svg?height=400&width=800&query=ecommerce platform screenshot",
     status: "Completed",
+    duration: "3 months",
+    year: "2024",
+    challenges: [
+      "Implementing real-time inventory updates across multiple concurrent users",
+      "Optimizing database queries for large product catalogs",
+      "Ensuring PCI compliance for payment processing",
+      "Building a scalable architecture to handle traffic spikes",
+    ],
+    keyFeatures: [
+      "Real-time inventory management",
+      "Secure payment processing with Stripe",
+      "Advanced product filtering and search",
+      "Order tracking and notifications",
+      "Admin dashboard with analytics",
+      "Mobile-responsive design",
+    ],
   },
   {
     id: 2,
     title: "Task Management App",
     shortDesc:
       "A collaborative task management application with real-time updates and team collaboration features.",
-    stack: ["React", "TypeScript", "Firebase", "Material-UI"],
+    fullDesc:
+      "A comprehensive task management solution designed for remote teams. Built with React and Firebase, this application provides real-time collaboration features, project organization, and productivity tracking.\n\nThe app includes advanced features like drag-and-drop task organization, team member assignment, deadline tracking, and integrated communication tools.",
+    stack: ["React", "TypeScript", "Firebase", "Material-UI", "WebSocket"],
     githubLink: "https://github.com/example/taskmanager",
     linkToProject: "https://taskmanager-demo.com",
-    image: "/placeholder.svg?height=300&width=400&query=task management app",
+    image:
+      "/placeholder.svg?height=400&width=800&query=task management app screenshot",
     status: "In Progress",
+    duration: "2 months",
+    year: "2024",
+    challenges: [
+      "Implementing real-time collaboration without conflicts",
+      "Designing an intuitive drag-and-drop interface",
+      "Managing complex state with multiple team members",
+      "Optimizing performance for large task lists",
+    ],
+    keyFeatures: [
+      "Real-time collaboration",
+      "Drag-and-drop task organization",
+      "Team member assignment and notifications",
+      "Project timeline and milestone tracking",
+      "Integrated chat and comments",
+      "Advanced filtering and search",
+    ],
   },
-  {
-    id: 3,
-    title: "Weather Dashboard",
-    shortDesc:
-      "A responsive weather dashboard with location-based forecasts and interactive charts.",
-    stack: ["Vue.js", "Chart.js", "OpenWeather API"],
-    githubLink: "https://github.com/example/weather",
-    linkToProject: "https://weather-dashboard-demo.com",
-    image: "/placeholder.svg?height=300&width=400&query=weather dashboard",
-    status: "Completed",
-  },
-  {
-    id: 4,
-    title: "Social Media Analytics",
-    shortDesc:
-      "Analytics dashboard for social media metrics with data visualization and reporting features.",
-    stack: ["React", "D3.js", "Express", "MongoDB"],
-    githubLink: "https://github.com/example/analytics",
-    linkToProject: "https://analytics-demo.com",
-    image: "/placeholder.svg?height=300&width=400&query=analytics dashboard",
-    status: "Planning",
-  },
-  {
-    id: 5,
-    title: "Recipe Finder",
-    shortDesc:
-      "A recipe discovery app with ingredient-based search and meal planning capabilities.",
-    stack: ["React Native", "Redux", "Spoonacular API"],
-    githubLink: "https://github.com/example/recipes",
-    linkToProject: "https://recipes-demo.com",
-    image: "/placeholder.svg?height=300&width=400&query=recipe app",
-    status: "Completed",
-  },
-  {
-    id: 6,
-    title: "Learning Management System",
-    shortDesc:
-      "An educational platform with course management, progress tracking, and interactive quizzes.",
-    stack: ["Next.js", "Prisma", "PostgreSQL", "NextAuth"],
-    githubLink: "https://github.com/example/lms",
-    linkToProject: "https://lms-demo.com",
-    image: "/placeholder.svg?height=300&width=400&query=learning platform",
-    status: "In Progress",
-  },
-  {
-    id: 7,
-    title: "Fitness Tracker",
-    shortDesc:
-      "A comprehensive fitness tracking app with workout plans and progress visualization.",
-    stack: ["React", "Node.js", "MongoDB", "Chart.js"],
-    githubLink: "https://github.com/example/fitness",
-    linkToProject: "https://fitness-demo.com",
-    image: "/placeholder.svg?height=300&width=400&query=fitness tracker",
-    status: "Completed",
-  },
-  {
-    id: 8,
-    title: "Real Estate Platform",
-    shortDesc:
-      "A property listing platform with advanced search filters and virtual tour integration.",
-    stack: ["React", "TypeScript", "Supabase", "Mapbox"],
-    githubLink: "https://github.com/example/realestate",
-    linkToProject: "https://realestate-demo.com",
-    image: "/placeholder.svg?height=300&width=400&query=real estate platform",
-    status: "Planning",
-  },
-  {
-    id: 9,
-    title: "Cryptocurrency Tracker",
-    shortDesc:
-      "Real-time cryptocurrency tracking with portfolio management and price alerts.",
-    stack: ["Vue.js", "Vuex", "CoinGecko API", "WebSocket"],
-    githubLink: "https://github.com/example/crypto",
-    linkToProject: "https://crypto-tracker-demo.com",
-    image: "/placeholder.svg?height=300&width=400&query=crypto tracker",
-    status: "In Progress",
-  },
+  // ...tambahkan project lain, gunakan default value kosong untuk field baru jika belum ada datanya...
 ];
-
 export default PROJECTS_DATA;
