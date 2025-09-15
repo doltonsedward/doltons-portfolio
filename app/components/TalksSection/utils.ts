@@ -1,4 +1,4 @@
-import { TalkDataTypes } from "@/app/talks/types";
+import { FilteredTalkData, TalkDataTypes } from "@/app/talks/types";
 import dayjs from "dayjs";
 
 export const getTypeColor = (type: TalkDataTypes["type"]) => {
@@ -16,7 +16,7 @@ export const getTypeColor = (type: TalkDataTypes["type"]) => {
   }
 };
 
-export const getStatusColor = (status: TalkDataTypes["status"]) => {
+export const getStatusColor = (status: FilteredTalkData["status"]) => {
   switch (status) {
     case "upcoming":
       return "bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200";
