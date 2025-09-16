@@ -1,12 +1,20 @@
 export type TalkStatusType = 'upcoming' | 'ongoing' | 'past';
 
+export type TalkType =
+  | 'webinar'
+  | 'workshop'
+  | 'mentoring'
+  | 'conference'
+  | 'bootcamp';
+
 export interface TalkDataTypes {
   id: string;
   title: string;
   shortDesc: string;
   description: string;
-  type: 'webinar' | 'workshop' | 'mentoring' | 'conference';
+  type: TalkType;
   datetime: string;
+  endDatetime?: string;
   duration: number;
   audience?: string;
   attendees?: number;

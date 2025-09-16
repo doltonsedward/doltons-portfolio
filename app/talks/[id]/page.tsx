@@ -1,8 +1,8 @@
 import TalkDetail from '@/views/TalkDetail';
 import React from 'react';
 
-const TalksDet = () => {
+const TalksDetail = () => {
   return <TalkDetail />;
 };
 
-export default TalksDet;
+export default TalksDetail;

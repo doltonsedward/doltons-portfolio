@@ -6,7 +6,19 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function formatDuration(seconds: number) {
-  const hours = Math.floor(seconds / 3600);
+  const days = Math.floor(seconds / (3600 * 24));
+  const hours = Math.floor((seconds % (3600 * 24)) / 3600);
   const minutes = Math.floor((seconds % 3600) / 60);
-  return `${hours}h ${minutes}m`;
+
+  if (days > 30) {
+    const months = Math.floor(days / 30);
+    const remainingDays = days % 30;
+    return remainingDays > 0
+      ? `${months} months ${remainingDays} days`
+      : `${months} months`;
+  } else if (days > 0) {
+    return `${days}d ${hours}h`;
+  } else {
+    return `${hours}h ${minutes}m`;
+  }
 }
