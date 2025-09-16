@@ -20,21 +20,24 @@ export default function TalkCTA() {
           their technical skills.
         </p>
         <div className="flex flex-col sm:flex-row gap-3">
-          <Button asChild className="flex-1">
+          <Button
+            asChild
+            className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
+          >
             <a
-              href="#contact"
+              href="https://www.linkedin.com/in/doltons-edward-nicholas-p/"
               className="flex items-center justify-center gap-2"
             >
-              <Mail className="h-4 w-4" />
+              <ExternalLink className="h-4 w-4" />
               Get in Touch
             </a>
           </Button>
           <Button variant="outline" asChild className="flex-1">
             <a
-              href="mailto:doltons@example.com?subject=Speaking Opportunity&body=Hi Doltons, I'd like to discuss a speaking opportunity..."
+              href="mailto:edwarddoltons@gmail.com?subject=Speaking Opportunity&body=Hi Doltons, I'd like to discuss a speaking opportunity..."
               className="flex items-center justify-center gap-2"
             >
-              <ExternalLink className="h-4 w-4" />
+              <Mail className="h-4 w-4" />
               Email Directly
             </a>
           </Button>

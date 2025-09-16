@@ -4,6 +4,7 @@ import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 import './globals.css';
 import TopProgressBarProviders from './components/TopProgressBarProvider';
+import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
   title: 'Doltons Edward – Full Stack Developer | React, Node.js, React Native',
@@ -62,6 +63,7 @@ export default function RootLayout({
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <body className="font-sans antialiased">
         <TopProgressBarProviders>{children}</TopProgressBarProviders>
+        <Toaster />
       </body>
     </html>
   );

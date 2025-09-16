@@ -63,7 +63,7 @@ const TalkActions = ({
             </Button>
           )}
 
-          <Button variant="outline" asChild className="w-full">
+          <Button variant="default" asChild className="w-full">
             <Link href="/#talks">View All Talks</Link>
           </Button>
         </div>

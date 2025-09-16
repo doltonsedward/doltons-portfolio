@@ -19,6 +19,8 @@ const TalkEventDetail = ({ talk }: TalkEventDetailsPropsType) => {
         platform={talk.platform}
         attendees={talk.attendees}
         status={talk.status}
+        title={talk.title}
+        shortDesc={talk.shortDesc}
       />
     </Card>
   );
