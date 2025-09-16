@@ -1,2 +1,2 @@
 pnpm tsc --noEmit
-# pnpm run prettier:format
+pnpm run prettier:format

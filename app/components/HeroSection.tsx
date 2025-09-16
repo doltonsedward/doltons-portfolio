@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
+import Image from 'next/image';
+import { Button } from '@/components/ui/button';
 
 interface HeroSectionProps {
   onNavClick: (sectionId: string) => void;
@@ -44,7 +44,7 @@ export default function HeroSection({ onNavClick }: HeroSectionProps) {
             <Button
               size="lg"
               className="bg-gray-900 hover:bg-gray-800"
-              onClick={() => onNavClick("projects")}
+              onClick={() => onNavClick('projects')}
             >
               View My Work
             </Button>

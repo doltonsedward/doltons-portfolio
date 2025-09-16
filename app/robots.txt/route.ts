@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { NextResponse } from 'next/server';
 
 export async function GET() {
   const robotsTxt = `User-agent: *
@@ -11,7 +11,7 @@ Sitemap: https://dollong.vercel.app/sitemap.xml`;
 
   return new NextResponse(robotsTxt, {
     headers: {
-      "Content-Type": "text/plain",
+      'Content-Type': 'text/plain',
     },
   });
 }

@@ -1,15 +1,15 @@
-import { FilteredTalkData } from "@/app/talks/types";
-import { formatTalkDate } from "@/views/TalkDetail/utils/talkHelpers";
-import { CardContent } from "@/components/ui/card";
-import { Calendar, Clock, Users, Video, Star } from "lucide-react";
+import { FilteredTalkData } from '@/app/talks/types';
+import { formatTalkDate } from '@/views/TalkDetail/utils/talkHelpers';
+import { CardContent } from '@/components/ui/card';
+import { Calendar, Clock, Users, Video, Star } from 'lucide-react';
 
 type DetailContentPropsType = {
-  datetime: FilteredTalkData["datetime"];
-  duration: FilteredTalkData["duration"];
-  audience: FilteredTalkData["audience"];
-  platform: FilteredTalkData["platform"];
-  attendees: FilteredTalkData["attendees"];
-  status: FilteredTalkData["status"];
+  datetime: FilteredTalkData['datetime'];
+  duration: FilteredTalkData['duration'];
+  audience: FilteredTalkData['audience'];
+  platform: FilteredTalkData['platform'];
+  attendees: FilteredTalkData['attendees'];
+  status: FilteredTalkData['status'];
 };
 
 const DetailContent = ({
@@ -74,7 +74,7 @@ const DetailContent = ({
         </div>
       )}
 
-      {attendees && status === "past" && (
+      {attendees && status === 'past' && (
         <div className="flex items-start gap-3">
           <Star className="h-5 w-5 text-gray-500 mt-0.5 flex-shrink-0" />
           <div>

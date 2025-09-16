@@ -1,6 +1,6 @@
-import { FilteredTalkData } from "@/app/talks/types";
-import { Card, CardHeader, CardTitle } from "@/components/ui/card";
-import DetailContent from "./DetailContent";
+import { FilteredTalkData } from '@/app/talks/types';
+import { Card, CardHeader, CardTitle } from '@/components/ui/card';
+import DetailContent from './DetailContent';
 
 type TalkEventDetailsPropsType = {
   talk: FilteredTalkData;

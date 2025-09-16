@@ -1,14 +1,14 @@
-"use client";
+'use client';
 
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { ArrowLeft } from "lucide-react";
-import Link from "next/link";
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+import { ArrowLeft } from 'lucide-react';
+import Link from 'next/link';
 import {
   getStatusColor,
   getTypeColor,
-} from "@/views/TalkDetail/utils/talkHelpers";
-import { FilteredTalkData } from "@/app/talks/types";
+} from '@/views/TalkDetail/utils/talkHelpers';
+import { FilteredTalkData } from '@/app/talks/types';
 
 interface TalkHeaderProps {
   talk: FilteredTalkData;

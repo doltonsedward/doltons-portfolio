@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { ExternalLink, User } from "lucide-react";
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import { ExternalLink, User } from 'lucide-react';
 
 const CTASection = () => (
   <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200">

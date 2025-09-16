@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 
 type TalkSharePropsType = {
   title: string;
@@ -32,7 +32,7 @@ const TalkShare = ({ title, shortDesc }: TalkSharePropsType) => {
       await navigator.clipboard.writeText(window.location.href);
       // You could add a toast notification here
     } catch (error) {
-      console.error("Failed to copy link:", error);
+      console.error('Failed to copy link:', error);
     }
   };
 

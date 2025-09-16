@@ -1,6 +1,6 @@
-import React from "react";
-import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import React from 'react';
+import { Button } from '@/components/ui/button';
+import { ExternalLink, Github } from 'lucide-react';
 
 type ActionButtonPropsType = {
   githubLink: string;

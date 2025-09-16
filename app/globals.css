@@ -123,19 +123,19 @@
   * {
     @apply border-border outline-ring/50;
   }
-  
+
   html {
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
+
   body {
     @apply bg-background text-foreground font-sans;
     margin: 0;
   }
-  
+
   #root {
     margin: auto;
   }
@@ -161,21 +161,21 @@
   .talks-grid {
     grid-template-columns: 1fr;
   }
-  
-  .talks-grid > *:nth-child(n+4) {
+
+  .talks-grid > *:nth-child(n + 4) {
     display: none;
   }
-  
+
   .talks-grid.show-more > * {
     display: block;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  .talks-grid > *:nth-child(n+7) {
+  .talks-grid > *:nth-child(n + 7) {
     display: none;
   }
-  
+
   .talks-grid.show-more > * {
     display: block;
   }

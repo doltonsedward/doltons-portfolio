@@ -1,11 +1,11 @@
-export type TalkStatusType = "upcoming" | "ongoing" | "past";
+export type TalkStatusType = 'upcoming' | 'ongoing' | 'past';
 
 export interface TalkDataTypes {
   id: string;
   title: string;
   shortDesc: string;
   description: string;
-  type: "webinar" | "workshop" | "mentoring" | "conference";
+  type: 'webinar' | 'workshop' | 'mentoring' | 'conference';
   datetime: string;
   duration: number;
   audience?: string;

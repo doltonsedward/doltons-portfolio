@@ -1,20 +1,20 @@
-import React from "react";
-import { CardContent as CoreCardContent } from "@/components/ui/card";
-import { Calendar, Clock, Users, Video } from "lucide-react";
-import { formatDate } from "../utils";
-import { formatDuration } from "@/lib/utils";
-import { Badge } from "@/components/ui/badge";
-import { FilteredTalkData } from "@/app/talks/types";
+import React from 'react';
+import { CardContent as CoreCardContent } from '@/components/ui/card';
+import { Calendar, Clock, Users, Video } from 'lucide-react';
+import { formatDate } from '../utils';
+import { formatDuration } from '@/lib/utils';
+import { Badge } from '@/components/ui/badge';
+import { FilteredTalkData } from '@/app/talks/types';
 
 type CardContentPropsType = {
-  description: FilteredTalkData["description"];
-  datetime: FilteredTalkData["datetime"];
-  duration: FilteredTalkData["duration"];
-  audience: FilteredTalkData["audience"];
-  attendees: FilteredTalkData["attendees"];
-  platform: FilteredTalkData["platform"];
-  topics: FilteredTalkData["topics"];
-  status: FilteredTalkData["status"];
+  description: FilteredTalkData['description'];
+  datetime: FilteredTalkData['datetime'];
+  duration: FilteredTalkData['duration'];
+  audience: FilteredTalkData['audience'];
+  attendees: FilteredTalkData['attendees'];
+  platform: FilteredTalkData['platform'];
+  topics: FilteredTalkData['topics'];
+  status: FilteredTalkData['status'];
 };
 
 const CardContent = ({
@@ -53,7 +53,7 @@ const CardContent = ({
           </div>
         )}
 
-        {attendees && status === "past" && (
+        {attendees && status === 'past' && (
           <div className="flex items-center text-sm text-gray-600 dark:text-gray-400">
             <Users className="h-4 w-4 mr-2 flex-shrink-0" />
             <span>{attendees} attendees</span>

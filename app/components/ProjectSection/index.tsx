@@ -1,20 +1,20 @@
-"use client";
+'use client';
 
 import {
   Carousel,
   CarouselContent,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
-import ProjectCard from "./ProjectCard";
-import { ArrowRight } from "lucide-react";
-import Link from "next/link";
-import { useGetData } from "@/hooks/http/useGetData";
-import { ProjectDataType } from "@/app/project/types";
+} from '@/components/ui/carousel';
+import ProjectCard from './ProjectCard';
+import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
+import { useGetData } from '@/hooks/http/useGetData';
+import { ProjectDataType } from '@/app/project/types';
 
 export default function ProjectsSection() {
   const { data, error, isLoading } = useGetData<ProjectDataType[]>({
-    api: "/api/projects",
+    api: '/api/projects',
   });
 
   if (!data?.length) return null;

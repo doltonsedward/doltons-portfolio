@@ -1,35 +1,35 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Calendar, ExternalLinkIcon } from "lucide-react";
-import Link from "next/link";
+import { Card, CardContent } from '@/components/ui/card';
+import { Calendar, ExternalLinkIcon } from 'lucide-react';
+import Link from 'next/link';
 
 const getRelatedBlogs = (projectId: number) => {
   const mockBlogs = [
     {
       id: 1,
-      title: "Building a Scalable E-Commerce Platform: My Journey",
+      title: 'Building a Scalable E-Commerce Platform: My Journey',
       excerpt:
-        "Learn about the challenges and solutions I encountered while building a full-stack e-commerce platform from scratch.",
-      publishedDate: "2024-01-15",
-      readTime: "8 min read",
-      slug: "building-scalable-ecommerce-platform",
+        'Learn about the challenges and solutions I encountered while building a full-stack e-commerce platform from scratch.',
+      publishedDate: '2024-01-15',
+      readTime: '8 min read',
+      slug: 'building-scalable-ecommerce-platform',
     },
     {
       id: 2,
-      title: "Implementing Real-time Inventory Management",
+      title: 'Implementing Real-time Inventory Management',
       excerpt:
-        "Deep dive into the technical implementation of real-time inventory updates using WebSockets and Redis.",
-      publishedDate: "2024-01-22",
-      readTime: "6 min read",
-      slug: "realtime-inventory-management",
+        'Deep dive into the technical implementation of real-time inventory updates using WebSockets and Redis.',
+      publishedDate: '2024-01-22',
+      readTime: '6 min read',
+      slug: 'realtime-inventory-management',
     },
     {
       id: 3,
-      title: "Payment Integration Best Practices with Stripe",
+      title: 'Payment Integration Best Practices with Stripe',
       excerpt:
-        "Security considerations and implementation details for integrating Stripe payment processing.",
-      publishedDate: "2024-02-05",
-      readTime: "5 min read",
-      slug: "stripe-payment-integration",
+        'Security considerations and implementation details for integrating Stripe payment processing.',
+      publishedDate: '2024-02-05',
+      readTime: '5 min read',
+      slug: 'stripe-payment-integration',
     },
   ];
 

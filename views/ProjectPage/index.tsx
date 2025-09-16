@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { useRouter } from "@/routes/navigation";
-import { ProjectDataType } from "@/app/project/types";
-import HeaderSection from "./HeaderSection";
-import ProjectCard from "@/app/components/ProjectCard";
+import { useRouter } from '@/routes/navigation';
+import { ProjectDataType } from '@/app/project/types';
+import HeaderSection from './HeaderSection';
+import ProjectCard from '@/app/components/ProjectCard';
 
 type ProjectPagePropsType = {
   projects: ProjectDataType[];
@@ -30,7 +30,7 @@ export default function ProjectsPage({ projects }: ProjectPagePropsType) {
               role="button"
               tabIndex={0}
               onKeyPress={(e) => {
-                if (e.key === "Enter" || e.key === " ") {
+                if (e.key === 'Enter' || e.key === ' ') {
                   redirectToDetail(project.id);
                 }
               }}

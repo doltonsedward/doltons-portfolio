@@ -1,7 +1,7 @@
-import { FilteredTalkData } from "@/app/talks/types";
-import TalkEventDetail from "./TalkEventDetail";
-import TalkAction from "./TalkAction";
-import TalkShare from "./TalkShare";
+import { FilteredTalkData } from '@/app/talks/types';
+import TalkEventDetail from './TalkEventDetail';
+import TalkAction from './TalkAction';
+import TalkShare from './TalkShare';
 
 type TalkSidebarPropsType = {
   talk: FilteredTalkData;

@@ -1,6 +1,6 @@
-import { CarouselItem } from "@/components/ui/carousel";
-import BaseProjectCard from "@/app/components/ProjectCard";
-import { ProjectStatusType } from "@/app/project/types";
+import { CarouselItem } from '@/components/ui/carousel';
+import BaseProjectCard from '@/app/components/ProjectCard';
+import { ProjectStatusType } from '@/app/project/types';
 
 type ProjectCardPropsType = {
   githubLink: string;

@@ -1,5 +1,5 @@
-import { Calendar, Mic, Users } from "lucide-react";
-import React from "react";
+import { Calendar, Mic, Users } from 'lucide-react';
+import React from 'react';
 
 type TalkStatsPropsType = {
   totalTalks: number;

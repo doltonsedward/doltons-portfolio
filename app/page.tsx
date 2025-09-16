@@ -1,26 +1,26 @@
-"use client";
+'use client';
 
-import { useState, useEffect } from "react";
-import MobileMenu from "./components/MobileMenu";
-import Sidebar from "./components/Sidebar";
-import HeroSection from "./components/HeroSection";
-import AboutSection from "./components/AboutSection";
-import ProjectsSection from "./components/ProjectSection";
-import ExperienceSection from "./components/ExperienceSection";
-import TalksSection from "./components/TalksSection";
-import ContactSection from "./components/ContactSection";
+import { useState, useEffect } from 'react';
+import MobileMenu from './components/MobileMenu';
+import Sidebar from './components/Sidebar';
+import HeroSection from './components/HeroSection';
+import AboutSection from './components/AboutSection';
+import ProjectsSection from './components/ProjectSection';
+import ExperienceSection from './components/ExperienceSection';
+import TalksSection from './components/TalksSection';
+import ContactSection from './components/ContactSection';
 
 const sections = [
-  "home",
-  "about",
-  "projects",
-  "experience",
-  "talks",
-  "contact",
+  'home',
+  'about',
+  'projects',
+  'experience',
+  'talks',
+  'contact',
 ];
 
 export default function Portfolio() {
-  const [activeSection, setActiveSection] = useState("home");
+  const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,17 +43,17 @@ export default function Portfolio() {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     handleScroll();
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const handleNavClick = (sectionId: string) => {
     setActiveSection(sectionId);
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView({ behavior: 'smooth' });
     }
   };
 

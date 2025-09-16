@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import { Card, CardHeader } from "@/components/ui/card";
-import { FilteredTalkData } from "@/app/talks/types";
-import React from "react";
-import CardImage from "./CardImage";
-import CardFooter from "./CardFooter";
-import CardContent from "./CardContent";
+import { Card, CardHeader } from '@/components/ui/card';
+import { FilteredTalkData } from '@/app/talks/types';
+import React from 'react';
+import CardImage from './CardImage';
+import CardFooter from './CardFooter';
+import CardContent from './CardContent';
 
 type TalkCardPropsType = {
   talk: FilteredTalkData;

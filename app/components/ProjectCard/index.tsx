@@ -1,8 +1,8 @@
-import Image from "next/image";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import ActionButton from "@/views/ProjectPage/ActionButton";
-import React from "react";
+import Image from 'next/image';
+import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import ActionButton from '@/views/ProjectPage/ActionButton';
+import React from 'react';
 
 type ProjectCardPropsType = {
   image: string;
@@ -29,11 +29,11 @@ const ProjectCard = ({
       <Badge
         variant="outline"
         className={`absolute top-3 right-3 z-10 text-xs border-0 px-3 py-1 shadow ${
-          status === "Completed"
-            ? "bg-green-100 text-green-700 hover:bg-green-100"
-            : status === "In Progress"
-            ? "bg-blue-100 text-blue-700 hover:bg-blue-100"
-            : "bg-orange-100 text-orange-700 hover:bg-orange-100"
+          status === 'Completed'
+            ? 'bg-green-100 text-green-700 hover:bg-green-100'
+            : status === 'In Progress'
+              ? 'bg-blue-100 text-blue-700 hover:bg-blue-100'
+              : 'bg-orange-100 text-orange-700 hover:bg-orange-100'
         }`}
       >
         {status}

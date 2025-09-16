@@ -1,7 +1,7 @@
-import Image from "next/image";
-import { Badge } from "@/components/ui/badge";
-import { ProjectDataType } from "@/app/project/types";
-import ProjectHeader from "./ProjectHeader";
+import Image from 'next/image';
+import { Badge } from '@/components/ui/badge';
+import { ProjectDataType } from '@/app/project/types';
+import ProjectHeader from './ProjectHeader';
 
 type ProjectSectionPropsType = ProjectDataType;
 
@@ -62,7 +62,7 @@ const ProjectSection = ({
           Project Overview
         </h3>
         <div className="prose prose-gray max-w-none">
-          {fullDesc.split("\n\n").map((paragraph, index) => (
+          {fullDesc.split('\n\n').map((paragraph, index) => (
             <p key={index} className="text-gray-600 mb-4">
               {paragraph}
             </p>

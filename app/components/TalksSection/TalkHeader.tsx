@@ -1,5 +1,5 @@
-import { Mic } from "lucide-react";
-import React from "react";
+import { Mic } from 'lucide-react';
+import React from 'react';
 
 const TalkHeader = () => (
   <div className="text-center mb-12">

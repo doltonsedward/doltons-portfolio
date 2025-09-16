@@ -1,10 +1,10 @@
-import { Badge } from "@/components/ui/badge";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import React from "react";
-import TalkCard from "../TalkCard";
-import { Calendar, ChevronDown, Users } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { FilteredTalkData } from "@/app/talks/types";
+import { Badge } from '@/components/ui/badge';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import React from 'react';
+import TalkCard from '../TalkCard';
+import { Calendar, ChevronDown, Users } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { FilteredTalkData } from '@/app/talks/types';
 
 interface TabSectionProps {
   stats: {
@@ -30,11 +30,11 @@ const TabSection: React.FC<TabSectionProps> = ({
 }) => {
   const getTabCount = (status: string) => {
     switch (status) {
-      case "upcoming":
+      case 'upcoming':
         return stats.upcomingCount;
-      case "past":
+      case 'past':
         return stats.pastCount;
-      case "ongoing":
+      case 'ongoing':
         return stats.ongoingCount;
       default:
         return stats.totalTalks;
@@ -47,25 +47,25 @@ const TabSection: React.FC<TabSectionProps> = ({
         <TabsTrigger value="all" className="flex items-center gap-2">
           All
           <Badge variant="secondary" className="ml-1">
-            {getTabCount("all")}
+            {getTabCount('all')}
           </Badge>
         </TabsTrigger>
         <TabsTrigger value="upcoming" className="flex items-center gap-2">
           Upcoming
           <Badge variant="secondary" className="ml-1">
-            {getTabCount("upcoming")}
+            {getTabCount('upcoming')}
           </Badge>
         </TabsTrigger>
         <TabsTrigger value="ongoing" className="flex items-center gap-2">
           Ongoing
           <Badge variant="secondary" className="ml-1">
-            {getTabCount("ongoing")}
+            {getTabCount('ongoing')}
           </Badge>
         </TabsTrigger>
         <TabsTrigger value="past" className="flex items-center gap-2">
           Past
           <Badge variant="secondary" className="ml-1">
-            {getTabCount("past")}
+            {getTabCount('past')}
           </Badge>
         </TabsTrigger>
       </TabsList>

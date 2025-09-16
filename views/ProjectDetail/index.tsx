@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import { ArrowLeft } from "lucide-react";
-import Link from "next/link";
-import { notFound, useParams } from "next/navigation";
-import PROJECTS_DATA from "@/app/data/projects";
-import RelatedBlogPosts from "./RelatedBlogPosts";
-import CTASection from "./CTASection";
-import ProjectSection from "./ProjectSection";
+import { ArrowLeft } from 'lucide-react';
+import Link from 'next/link';
+import { notFound, useParams } from 'next/navigation';
+import PROJECTS_DATA from '@/app/data/projects';
+import RelatedBlogPosts from './RelatedBlogPosts';
+import CTASection from './CTASection';
+import ProjectSection from './ProjectSection';
 
 const ProjectDetailPage = () => {
   const params = useParams();

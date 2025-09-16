@@ -1,18 +1,18 @@
-"use client";
+'use client';
 
-import { useState } from "react";
+import { useState } from 'react';
 import {
   TALKS_DATA,
   upcomingTalks,
   ongoingTalks,
   pastTalks,
   getTalksWithStatus,
-} from "@/app/data/talks";
-import TalkHeader from "./TalkHeader";
-import TalkStats from "./TalkStats";
-import ContactMe from "./ContactMe";
-import CTAViewUpcoming from "./CTAViewUpcoming";
-import TabSection from "./Tab";
+} from '@/app/data/talks';
+import TalkHeader from './TalkHeader';
+import TalkStats from './TalkStats';
+import ContactMe from './ContactMe';
+import CTAViewUpcoming from './CTAViewUpcoming';
+import TabSection from './Tab';
 
 // const ITEMS_PER_PAGE_DESKTOP = 6;
 // const ITEMS_PER_PAGE_MOBILE = 3;
@@ -38,7 +38,7 @@ const getStats = () => {
 export default function TalksSection() {
   const talks = getTalksWithStatus();
   const [visibleCount, setVisibleCount] = useState(6);
-  const [activeTab, setActiveTab] = useState("all");
+  const [activeTab, setActiveTab] = useState('all');
 
   const stats = getStats();
 
@@ -49,7 +49,7 @@ export default function TalksSection() {
   };
 
   const filteredTalks = talks.filter((talk) => {
-    if (activeTab === "all") return true;
+    if (activeTab === 'all') return true;
     return talk.status === activeTab;
   });
 
@@ -71,7 +71,7 @@ export default function TalksSection() {
 
         <CTAViewUpcoming
           upcomingCount={stats.upcomingCount}
-          onViewUpcoming={() => handleTabChange("upcoming")}
+          onViewUpcoming={() => handleTabChange('upcoming')}
         />
 
         <TabSection

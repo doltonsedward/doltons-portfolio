@@ -1,9 +1,9 @@
-import React from "react";
-import { TalkDataTypes } from "@/app/talks/types";
-import TalkBanner from "./TalkBanner";
-import TalkDescription from "./TalkDescription";
-import TalkTopics from "./TalkTopics";
-import TalkCTA from "./TalkCTA";
+import React from 'react';
+import { TalkDataTypes } from '@/app/talks/types';
+import TalkBanner from './TalkBanner';
+import TalkDescription from './TalkDescription';
+import TalkTopics from './TalkTopics';
+import TalkCTA from './TalkCTA';
 
 type TalkMainContentPropsType = {
   talk: TalkDataTypes;

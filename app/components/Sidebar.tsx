@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Button } from '@/components/ui/button';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 interface SidebarProps {
   activeSection: string;
@@ -10,12 +10,12 @@ interface SidebarProps {
 
 export default function Sidebar({ activeSection, onNavClick }: SidebarProps) {
   const navItems = [
-    { id: "home", label: "Home" },
-    { id: "about", label: "About" },
-    { id: "projects", label: "Projects" },
-    { id: "talks", label: "Talks & Teaching" },
-    { id: "experience", label: "Experience" },
-    { id: "contact", label: "Contact" },
+    { id: 'home', label: 'Home' },
+    { id: 'about', label: 'About' },
+    { id: 'projects', label: 'Projects' },
+    { id: 'talks', label: 'Talks & Teaching' },
+    { id: 'experience', label: 'Experience' },
+    { id: 'contact', label: 'Contact' },
   ];
 
   return (
@@ -34,8 +34,8 @@ export default function Sidebar({ activeSection, onNavClick }: SidebarProps) {
                   onClick={() => onNavClick(item.id)}
                   className={`w-full text-left px-4 py-3 rounded-lg transition-all duration-200 ${
                     activeSection === item.id
-                      ? "bg-gray-900 text-white shadow-md"
-                      : "text-gray-700 hover:text-gray-900 hover:bg-gray-100"
+                      ? 'bg-gray-900 text-white shadow-md'
+                      : 'text-gray-700 hover:text-gray-900 hover:bg-gray-100'
                   }`}
                 >
                   {item.label}

@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { Button } from '@/components/ui/button';
+import { ExternalLink, Github } from 'lucide-react';
 
 type CTASectionPropsType = {
   githubLink: string;

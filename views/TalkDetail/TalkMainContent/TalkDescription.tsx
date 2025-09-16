@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { TalkDataTypes } from "@/app/talks/types";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { MessageCircle } from "lucide-react";
+import { TalkDataTypes } from '@/app/talks/types';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { MessageCircle } from 'lucide-react';
 
 interface TalkDescriptionProps {
   talk: TalkDataTypes;

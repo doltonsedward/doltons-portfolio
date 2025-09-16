@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import { notFound, useParams } from "next/navigation";
-import TalkMainContent from "./TalkMainContent";
-import TalkSidebar from "./TalkSidebar";
-import TalkHeader from "./TalkHeader";
-import { TALKS_DATA } from "@/app/data/talks";
-import dayjs from "dayjs";
-import { FilteredTalkData } from "@/app/talks/types";
+import { notFound, useParams } from 'next/navigation';
+import TalkMainContent from './TalkMainContent';
+import TalkSidebar from './TalkSidebar';
+import TalkHeader from './TalkHeader';
+import { TALKS_DATA } from '@/app/data/talks';
+import dayjs from 'dayjs';
+import { FilteredTalkData } from '@/app/talks/types';
 
 const TalkDetail = () => {
   const params = useParams<{ id: string }>();
@@ -18,13 +18,13 @@ const TalkDetail = () => {
 
   const now = dayjs();
   const start = dayjs(talk!.datetime);
-  const end = start.add(talk!.duration, "second");
+  const end = start.add(talk!.duration, 'second');
 
-  let status: "upcoming" | "ongoing" | "past" = "past";
+  let status: 'upcoming' | 'ongoing' | 'past' = 'past';
   if (start.isAfter(now)) {
-    status = "upcoming";
+    status = 'upcoming';
   } else if (end.isAfter(now)) {
-    status = "ongoing";
+    status = 'ongoing';
   }
 
   const shownTalk: FilteredTalkData = { ...talk!, status };

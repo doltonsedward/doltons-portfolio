@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 export default function ContactSection() {
   const handleGetInTouch = () => {
     window.open(
-      "https://www.linkedin.com/in/doltons-edward-nicholas-p/",
-      "_blank"
+      'https://www.linkedin.com/in/doltons-edward-nicholas-p/',
+      '_blank'
     );
   };
 

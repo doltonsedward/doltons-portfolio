@@ -28,7 +28,7 @@
 //   | "REST API"
 //   | "Firebase";
 
-export type ProjectStatusType = "In Progress" | "Completed" | "Planning";
+export type ProjectStatusType = 'In Progress' | 'Completed' | 'Planning';
 
 export type ProjectDataType = {
   id: number;

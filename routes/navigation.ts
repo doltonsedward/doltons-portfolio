@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { useRouter as useNextRouter } from "@bprogress/next";
+import { useRouter as useNextRouter } from '@bprogress/next';
 
 export const useRouter = () => {
   const router = useNextRouter();

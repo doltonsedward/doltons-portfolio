@@ -1,15 +1,15 @@
-"use client";
+'use client';
 
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { ExternalLink, Video } from "lucide-react";
-import Link from "next/link";
-import { FilteredTalkData } from "@/app/talks/types";
+import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { ExternalLink, Video } from 'lucide-react';
+import Link from 'next/link';
+import { FilteredTalkData } from '@/app/talks/types';
 
 type TalkActionsPropsType = {
-  status: FilteredTalkData["status"];
-  registrationUrl: FilteredTalkData["registrationUrl"];
-  recordingUrl: FilteredTalkData["recordingUrl"];
+  status: FilteredTalkData['status'];
+  registrationUrl: FilteredTalkData['registrationUrl'];
+  recordingUrl: FilteredTalkData['recordingUrl'];
 };
 
 const TalkActions = ({
@@ -21,7 +21,7 @@ const TalkActions = ({
     <Card>
       <CardContent className="pt-6">
         <div className="space-y-3">
-          {status === "upcoming" && registrationUrl && (
+          {status === 'upcoming' && registrationUrl && (
             <Button asChild className="w-full">
               <a
                 href={registrationUrl}
@@ -35,7 +35,7 @@ const TalkActions = ({
             </Button>
           )}
 
-          {status === "past" && recordingUrl && (
+          {status === 'past' && recordingUrl && (
             <Button variant="outline" asChild className="w-full">
               <a
                 href={recordingUrl}
@@ -49,7 +49,7 @@ const TalkActions = ({
             </Button>
           )}
 
-          {status === "ongoing" && registrationUrl && (
+          {status === 'ongoing' && registrationUrl && (
             <Button asChild className="w-full">
               <a
                 href={registrationUrl}

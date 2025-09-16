@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Target } from "lucide-react";
-import { TalkDataTypes } from "@/app/talks/types";
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Target } from 'lucide-react';
+import { TalkDataTypes } from '@/app/talks/types';
 
 interface TalkTopicsProps {
   talk: TalkDataTypes;

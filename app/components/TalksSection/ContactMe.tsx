@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button";
-import { ExternalLink } from "lucide-react";
-import React from "react";
+import { Button } from '@/components/ui/button';
+import { ExternalLink } from 'lucide-react';
+import React from 'react';
 
 const ContactMe = () => (
   <div className="mt-16 text-center">

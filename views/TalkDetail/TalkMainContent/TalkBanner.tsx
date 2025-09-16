@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import { TalkDataTypes } from "../../../app/talks/types";
+import Image from 'next/image';
+import { TalkDataTypes } from '../../../app/talks/types';
 
 interface TalkBannerProps {
   talk: TalkDataTypes;

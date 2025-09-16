@@ -1,8 +1,8 @@
-import { Badge } from "@/components/ui/badge";
-import { Calendar } from "lucide-react";
-import { ProjectStatusType } from "@/app/project/types";
-import getButtonStatusVariant from "../../utils/getButtonStatusVariant";
-import CTASection from "./CTASection";
+import { Badge } from '@/components/ui/badge';
+import { Calendar } from 'lucide-react';
+import { ProjectStatusType } from '@/app/project/types';
+import getButtonStatusVariant from '../../utils/getButtonStatusVariant';
+import CTASection from './CTASection';
 
 type ProjectHeader = {
   title: string;

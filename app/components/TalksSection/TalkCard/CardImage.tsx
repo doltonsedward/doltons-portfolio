@@ -1,14 +1,14 @@
-import { Badge } from "@/components/ui/badge";
-import Image from "next/image";
-import React from "react";
-import { getStatusColor, getTypeColor } from "../utils";
-import { FilteredTalkData } from "@/app/talks/types";
+import { Badge } from '@/components/ui/badge';
+import Image from 'next/image';
+import React from 'react';
+import { getStatusColor, getTypeColor } from '../utils';
+import { FilteredTalkData } from '@/app/talks/types';
 
 type CardImagePropsType = {
   bannerImage: string;
   bannerAlt: string;
-  type: FilteredTalkData["type"];
-  status: FilteredTalkData["status"];
+  type: FilteredTalkData['type'];
+  status: FilteredTalkData['status'];
 };
 
 const CardImage = ({

@@ -1,15 +1,15 @@
-import React from "react";
-import { CardFooter as CoreCardFooter } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { FilteredTalkData } from "@/app/talks/types";
-import { useRouter } from "@/routes/navigation";
-import { ExternalLink, Video } from "lucide-react";
+import React from 'react';
+import { CardFooter as CoreCardFooter } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { FilteredTalkData } from '@/app/talks/types';
+import { useRouter } from '@/routes/navigation';
+import { ExternalLink, Video } from 'lucide-react';
 
 type CardFooterPropsType = {
   talkId: string;
-  status: FilteredTalkData["status"];
-  registrationUrl?: FilteredTalkData["registrationUrl"];
-  recordingUrl?: FilteredTalkData["recordingUrl"];
+  status: FilteredTalkData['status'];
+  registrationUrl?: FilteredTalkData['registrationUrl'];
+  recordingUrl?: FilteredTalkData['recordingUrl'];
 };
 
 const CardFooter = ({
@@ -34,7 +34,7 @@ const CardFooter = ({
           View Details
         </Button>
 
-        {status === "upcoming" && registrationUrl && (
+        {status === 'upcoming' && registrationUrl && (
           <Button asChild className="flex-1">
             <a
               href={registrationUrl}
@@ -48,7 +48,7 @@ const CardFooter = ({
           </Button>
         )}
 
-        {status === "past" && recordingUrl && (
+        {status === 'past' && recordingUrl && (
           <Button variant="outline" asChild className="flex-1">
             <a
               href={recordingUrl}
@@ -62,7 +62,7 @@ const CardFooter = ({
           </Button>
         )}
 
-        {status === "ongoing" && (
+        {status === 'ongoing' && (
           <Button disabled className="flex-1">
             In Progress
           </Button>
