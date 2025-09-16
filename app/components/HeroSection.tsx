@@ -10,7 +10,7 @@ interface HeroSectionProps {
 export default function HeroSection({ onNavClick }: HeroSectionProps) {
   return (
     <section id="home" className="px-6 py-16 lg:px-12 lg:py-24">
-      <div className="max-w-6xl mx-auto">
+      <div className="constrain">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="flex-shrink-0">
             <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-white shadow-lg">

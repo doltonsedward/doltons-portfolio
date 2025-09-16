@@ -60,7 +60,7 @@ export default function TalksSection() {
       id="talks"
       className="px-6 py-16 lg:px-12 bg-gray-50 dark:bg-gray-900"
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="constrain">
         <TalkHeader />
 
         <TalkStats

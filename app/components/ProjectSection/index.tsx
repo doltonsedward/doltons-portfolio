@@ -21,7 +21,7 @@ export default function ProjectsSection() {
 
   return (
     <section id="projects" className="px-6 py-16 lg:px-12 bg-gray-50">
-      <div className="max-w-6xl mx-auto">
+      <div className="constrain">
         <div className="flex justify-between items-center w-full mb-12">
           <h2 className="text-3xl font-bold text-gray-900">
             Featured Projects

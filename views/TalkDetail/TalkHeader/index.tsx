@@ -17,7 +17,7 @@ interface TalkHeaderProps {
 export default function TalkHeader({ talk }: TalkHeaderProps) {
   return (
     <div className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
-      <div className="max-w-4xl mx-auto px-6 py-6">
+      <div className="constrain px-6 py-6">
         <div className="flex items-center gap-4 mb-4">
           <Button variant="ghost" size="sm" asChild>
             <Link href="/#talks" className="flex items-center gap-2">

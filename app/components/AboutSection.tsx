@@ -5,7 +5,7 @@ import { Badge } from '@/components/ui/badge';
 export default function AboutSection() {
   return (
     <section id="about" className="px-6 py-16 lg:px-12 bg-white">
-      <div className="max-w-6xl mx-auto">
+      <div className="constrain">
         <h2 className="text-3xl font-bold text-gray-900 mb-8">About Me</h2>
         <div className="grid lg:grid-cols-2 gap-12">
           <div>

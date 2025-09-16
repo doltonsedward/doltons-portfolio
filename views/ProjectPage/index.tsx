@@ -18,7 +18,7 @@ export default function ProjectsPage({ projects }: ProjectPagePropsType) {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="max-w-6xl mx-auto px-6 py-16 lg:px-12">
+      <div className="constrain px-6 py-16 lg:px-12">
         <HeaderSection />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

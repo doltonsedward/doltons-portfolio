@@ -33,7 +33,7 @@ const TalkDetail = () => {
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       <TalkHeader talk={shownTalk} />
 
-      <div className="max-w-4xl mx-auto px-6 py-12">
+      <div className="constrain px-6 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <TalkMainContent talk={shownTalk} />
           <TalkSidebar talk={shownTalk} />

@@ -3,7 +3,7 @@
 export default function ExperienceSection() {
   return (
     <section id="experience" className="px-6 py-16 lg:px-12 bg-white">
-      <div className="max-w-6xl mx-auto">
+      <div className="constrain">
         <h2 className="text-3xl font-bold text-gray-900 mb-12">Experience</h2>
         <div className="space-y-8">
           <div className="border-l-2 border-gray-200 pl-6">
