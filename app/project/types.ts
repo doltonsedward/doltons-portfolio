@@ -28,11 +28,16 @@
 //   | "REST API"
 //   | "Firebase";
 
-export type ProjectStatusType = 'In Progress' | 'Completed' | 'Planning';
+export type ProjectStatusType =
+  | 'In Progress'
+  | 'Completed'
+  | 'Planning'
+  | 'Revamp';
 
 export type ProjectDataType = {
   id: number;
   title: string;
+  slug: string;
   shortDesc: string;
   fullDesc: string;
   stack: string[];
