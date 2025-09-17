@@ -30,7 +30,6 @@ const CardFooter = ({
           className="flex-1"
           onClick={redirectToTalkDetail}
         >
-          {/* <Link href={`/talks/${talkId}`}>View Details</Link> */}
           View Details
         </Button>
 

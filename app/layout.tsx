@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { HeroUIProvider } from '@heroui/react';
 import { GeistSans } from 'geist/font/sans';
 // @ts-ignore
 import { GeistMono } from 'geist/font/mono';
@@ -62,8 +63,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <body className="font-sans antialiased">
-        <TopProgressBarProviders>{children}</TopProgressBarProviders>
-        <Toaster />
+        <HeroUIProvider>
+          <TopProgressBarProviders>{children}</TopProgressBarProviders>
+          <Toaster />
+        </HeroUIProvider>
       </body>
     </html>
   );

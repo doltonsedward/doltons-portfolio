@@ -1,4 +1,5 @@
-import { Button } from '@/components/ui/button';
+// import { Button } from '@/components/ui/button';
+import { Button } from '@heroui/react';
 import { ExternalLink } from 'lucide-react';
 import React from 'react';
 
@@ -13,8 +14,12 @@ const ContactMe = () => (
         community. Whether it's a conference, webinar, workshop, or mentoring
         session, I'd love to hear from you.
       </p>
-      <Button asChild>
-        <a href="#contact" className="inline-flex items-center">
+      <Button color="primary" variant="solid">
+        <a
+          href="https://www.linkedin.com/in/doltons-edward-nicholas-p/"
+          target="_blank"
+          className="inline-flex items-center"
+        >
           <ExternalLink className="h-4 w-4 mr-2" />
           Get in Touch
         </a>
