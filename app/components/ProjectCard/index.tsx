@@ -5,6 +5,7 @@ import ActionButton from '@/views/ProjectPage/ActionButton';
 import React from 'react';
 
 type ProjectCardPropsType = {
+  id: number;
   image: string;
   title: string;
   status: string;
@@ -15,6 +16,7 @@ type ProjectCardPropsType = {
 };
 
 const ProjectCard = ({
+  id,
   image,
   title,
   status,
@@ -23,9 +25,8 @@ const ProjectCard = ({
   githubLink,
   linkToProject,
 }: ProjectCardPropsType) => (
-  <Card className="group hover:shadow-lg transition-shadow h-full">
+  <Card className="group hover:shadow-lg transition-shadow h-full flex flex-col">
     <div className="relative aspect-video bg-gray-200 rounded-t-lg overflow-hidden">
-      {/* Status Badge - floating on image */}
       <Badge
         variant="outline"
         className={`absolute top-3 right-3 z-10 text-xs border-0 px-3 py-1 shadow ${
@@ -46,21 +47,27 @@ const ProjectCard = ({
         className="w-full h-full object-cover group-hover:scale-105 transition-transform"
       />
     </div>
-    <CardContent className="p-6">
-      <div className="flex justify-between items-start mb-2">
-        <h3 className="text-xl font-semibold text-gray-900">{title}</h3>
-      </div>
-      <p className="text-gray-600 mb-4 line-clamp-3">{shortDesc}</p>
+    <CardContent className="p-6 flex flex-col flex-1 justify-between">
+      <div>
+        <div className="flex justify-between items-start mb-2">
+          <h3 className="text-xl font-semibold text-gray-900">{title}</h3>
+        </div>
+        <p className="text-gray-600 mb-4 line-clamp-3">{shortDesc}</p>
 
-      <div className="flex flex-wrap gap-2 mb-4">
-        {stack.map((tech, index) => (
-          <Badge key={index} variant="outline" className="text-xs">
-            {tech}
-          </Badge>
-        ))}
+        <div className="flex flex-wrap gap-2 mb-4">
+          {stack.map((tech, index) => (
+            <Badge key={index} variant="outline" className="text-xs">
+              {tech}
+            </Badge>
+          ))}
+        </div>
       </div>
 
-      <ActionButton githubLink={githubLink} linkToProject={linkToProject} />
+      <ActionButton
+        githubLink={githubLink}
+        linkToProject={linkToProject}
+        projectId={id}
+      />
     </CardContent>
   </Card>
 );
@@ -68,6 +75,7 @@ const ProjectCard = ({
 export default React.memo(
   ProjectCard,
   (prev, next) =>
+    prev.id === next.id &&
     prev.githubLink === next.githubLink &&
     prev.linkToProject === next.linkToProject &&
     prev.image === next.image &&
