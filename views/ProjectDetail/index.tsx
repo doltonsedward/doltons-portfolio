@@ -32,6 +32,7 @@ const ProjectDetailPage = () => {
         <ProjectSection
           id={project.id}
           title={project.title}
+          slug={project.slug}
           shortDesc={project.shortDesc}
           status={project.status}
           year={project.year}
