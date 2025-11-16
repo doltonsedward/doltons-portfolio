@@ -9,7 +9,7 @@ const PROJECTS_DATA: ProjectDataType[] = [
       'A lightweight, design-focused job board UI targeted for IT job seekers.',
     fullDesc:
       'IT Lance is a small web project focused on a clean, unique UI for job seekers and recruiters. It provides landing and static pages showcasing job listings and company information — implemented as a static site (GitHub Pages). It is intended as an open-source UI/UX project for job marketplace concepts.',
-    stack: ['HTML', 'CSS', 'JavaScript'],
+    stack: ['HTML', 'CSS', 'JavaScript', 'React JS'],
     githubLink: 'https://github.com/doltonsedward/IT_Lance-App',
     linkToProject: 'https://doltonsedward.github.io/IT_Lance-App/',
     image: '/assets/projects/it-lance.png',

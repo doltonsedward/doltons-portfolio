@@ -1,6 +1,6 @@
 'use client';
 
-import { Button } from '@/components/ui/button';
+import { Button } from '@heroui/react';
 import { Github, Linkedin, Mail } from 'lucide-react';
 
 interface SidebarProps {
@@ -46,13 +46,25 @@ export default function Sidebar({ activeSection, onNavClick }: SidebarProps) {
         </nav>
 
         <div className="flex space-x-4 mt-8">
-          <Button variant="ghost" size="icon">
+          <Button
+            variant="light"
+            isIconOnly
+            className="min-w-unit-10 w-10 h-10"
+          >
             <Github className="h-4 w-4" />
           </Button>
-          <Button variant="ghost" size="icon">
+          <Button
+            variant="light"
+            isIconOnly
+            className="min-w-unit-10 w-10 h-10"
+          >
             <Linkedin className="h-4 w-4" />
           </Button>
-          <Button variant="ghost" size="icon">
+          <Button
+            variant="light"
+            isIconOnly
+            className="min-w-unit-10 w-10 h-10"
+          >
             <Mail className="h-4 w-4" />
           </Button>
         </div>

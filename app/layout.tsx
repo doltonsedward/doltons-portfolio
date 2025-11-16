@@ -1,11 +1,10 @@
 import type { Metadata } from 'next';
 import { HeroUIProvider } from '@heroui/react';
 import { GeistSans } from 'geist/font/sans';
-// @ts-ignore
+import { ToastProvider } from '@heroui/toast';
 import { GeistMono } from 'geist/font/mono';
 import './globals.css';
 import TopProgressBarProviders from './components/TopProgressBarProvider';
-import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
   title: 'Doltons Edward – Full Stack Developer | React, Node.js, React Native',
@@ -64,8 +63,8 @@ export default function RootLayout({
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <body className="font-sans antialiased">
         <HeroUIProvider>
+          <ToastProvider />
           <TopProgressBarProviders>{children}</TopProgressBarProviders>
-          <Toaster />
         </HeroUIProvider>
       </body>
     </html>

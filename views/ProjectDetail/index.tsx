@@ -4,7 +4,7 @@ import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 import { notFound, useParams } from 'next/navigation';
 import PROJECTS_DATA from '@/app/data/projects';
-import RelatedBlogPosts from './RelatedBlogPosts';
+// import RelatedBlogPosts from './RelatedBlogPosts';
 import CTASection from './CTASection';
 import ProjectSection from './ProjectSection';
 
@@ -46,7 +46,7 @@ const ProjectDetailPage = () => {
           challenges={project.challenges}
         />
 
-        <RelatedBlogPosts projectId={project.id} />
+        {/* <RelatedBlogPosts projectId={project.id} /> */}
 
         <CTASection />
       </div>

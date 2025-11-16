@@ -1,8 +1,8 @@
 import { FilteredTalkData } from '@/app/talks/types';
 import { formatTalkDate } from '@/views/TalkDetail/utils/talkHelpers';
 import { CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { useToast } from '@/hooks/use-toast';
+import { Button } from '@heroui/react';
+import { addToast } from '@heroui/toast';
 import {
   Calendar,
   Clock,
@@ -36,7 +36,6 @@ const DetailContent = ({
   title,
   shortDesc,
 }: DetailContentPropsType) => {
-  const { toast } = useToast();
   const [copied, setCopied] = useState(false);
 
   const handleShare = async () => {
@@ -61,19 +60,20 @@ const DetailContent = ({
     try {
       await navigator.clipboard.writeText(window.location.href);
       setCopied(true);
-      toast({
+      addToast({
         title: 'Link copied!',
         description: 'Talk link has been copied to your clipboard.',
-        duration: 3000,
+        timeout: 3000,
+        color: 'success',
       });
       setTimeout(() => setCopied(false), 2000);
     } catch (error) {
       console.error('Failed to copy link:', error);
-      toast({
+      addToast({
         title: 'Failed to copy',
         description: 'Unable to copy link to clipboard.',
-        variant: 'destructive',
-        duration: 3000,
+        timeout: 3000,
+        color: 'danger',
       });
     }
   };
@@ -152,31 +152,28 @@ const DetailContent = ({
         </p>
         <div className="flex flex-col sm:flex-row gap-2">
           <Button
-            variant="outline"
+            variant="bordered"
             size="sm"
             onClick={handleShare}
-            className="flex-1 gap-2 hover:bg-primary hover:text-primary-foreground transition-colors"
+            className="flex-1"
+            startContent={<Share2 className="h-3.5 w-3.5" />}
           >
-            <Share2 className="h-3.5 w-3.5" />
             Share
           </Button>
           <Button
-            variant="outline"
+            variant="bordered"
             size="sm"
             onClick={handleCopyLink}
-            className="flex-1 gap-2 hover:bg-secondary hover:text-secondary-foreground transition-colors"
-          >
-            {copied ? (
-              <>
+            className="flex-1"
+            startContent={
+              copied ? (
                 <Check className="h-3.5 w-3.5 text-green-600" />
-                Copied!
-              </>
-            ) : (
-              <>
+              ) : (
                 <Copy className="h-3.5 w-3.5" />
-                Copy Link
-              </>
-            )}
+              )
+            }
+          >
+            {copied ? 'Copied!' : 'Copy Link'}
           </Button>
         </div>
       </div>

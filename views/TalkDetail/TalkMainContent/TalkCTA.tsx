@@ -1,7 +1,7 @@
 'use client';
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import { Button } from '@heroui/react';
 import { Award, Mail, ExternalLink } from 'lucide-react';
 
 export default function TalkCTA() {
@@ -21,25 +21,24 @@ export default function TalkCTA() {
         </p>
         <div className="flex flex-col sm:flex-row gap-3">
           <Button
-            asChild
+            as="a"
+            href="https://www.linkedin.com/in/doltons-edward-nicholas-p/"
+            target="_blank"
+            color="primary"
             className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
+            startContent={<ExternalLink className="h-4 w-4" />}
           >
-            <a
-              href="https://www.linkedin.com/in/doltons-edward-nicholas-p/"
-              className="flex items-center justify-center gap-2"
-            >
-              <ExternalLink className="h-4 w-4" />
-              Get in Touch
-            </a>
+            Get in Touch
           </Button>
-          <Button variant="outline" asChild className="flex-1">
-            <a
-              href="mailto:edwarddoltons@gmail.com?subject=Speaking Opportunity&body=Hi Doltons, I'd like to discuss a speaking opportunity..."
-              className="flex items-center justify-center gap-2"
-            >
-              <Mail className="h-4 w-4" />
-              Email Directly
-            </a>
+          <Button
+            as="a"
+            href="mailto:edwarddoltons@gmail.com"
+            target="_blank"
+            variant="bordered"
+            className="flex-1"
+            startContent={<Mail className="h-4 w-4" />}
+          >
+            Email Directly
           </Button>
         </div>
       </CardContent>
