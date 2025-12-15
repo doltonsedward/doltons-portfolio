@@ -28,6 +28,41 @@ const PROJECTS_DATA: ProjectDataType[] = [
     ],
   },
   {
+    id: 6,
+    title: 'Hyperhire Landing Page',
+    slug: 'hyperhire-landing-page',
+    shortDesc:
+      'A high-fidelity implementation of an AI-powered recruitment platform connecting Korean enterprises with top-tier global talent.',
+    fullDesc:
+      'Hyperhire is a premier B2B HR solution designed to streamline the hiring of international talent for Korean companies. This project is a pixel-perfect replication of their landing page, built to demonstrate precision engineering under strict time constraints. It highlights the platform’s core value: bridging the gap between skilled global professionals and businesses through AI-driven matching, automated payroll, and compliance management—all presented through a fluid, high-performance user interface.',
+    stack: [
+      'Next.js',
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'Framer Motion',
+      'HeroUI',
+    ],
+    githubLink: 'https://github.com/doltonsedward/hyperhire-landing-page',
+    linkToProject: 'https://hyperhire-landing-page-ecru.vercel.app/',
+    image: '/assets/projects/hyperhire.png',
+    status: 'Completed',
+    duration: '1 day (Hackathon style)',
+    year: '2025',
+    challenges: [
+      'Rapid Prototyping: Delivering a production-ready UI within a strict 24-hour timeframe without compromising code quality.',
+      'Complex Animations: Engineering smooth, scroll-triggered reveal effects and micro-interactions using Framer Motion to match the original premium feel.',
+      'Pixel-Perfect Accuracy: Translating a complex design system (likely Figma) into responsive Tailwind CSS code with exact spacing, typography, and color fidelity.',
+      'HeroUI Integration: Customizing HeroUI components to blend seamlessly with the bespoke design requirements.',
+    ],
+    keyFeatures: [
+      'Immersive Hero Section: Features dynamic entry animations and a clear value proposition.',
+      'Responsive Grid Layouts: Adaptive talent cards and service grids that stack perfectly across mobile, tablet, and desktop.',
+      'Interactive UI Elements: Hover states, smooth scrolling, and engaging micro-interactions powered by Framer Motion.',
+      'Modern Tech Stack: Built on the Next.js App Router for optimal performance and SEO.',
+    ],
+  },
+  {
     id: 2,
     title: 'Literature',
     slug: 'literature',
