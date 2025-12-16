@@ -1,8 +1,13 @@
 'use client';
 
 import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { FileText } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 export default function AboutSection() {
+  const router = useRouter();
+
   return (
     <section id="about" className="px-6 py-16 lg:px-12 bg-white">
       <div className="constrain">
@@ -15,11 +20,18 @@ export default function AboutSection() {
               expertise in modern web technologies, I bridge the gap between
               beautiful design and functional code.
             </p>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed mb-6">
               When I'm not coding, you'll find me exploring new technologies,
               contributing to open-source projects, or sharing knowledge with
               the developer community.
             </p>
+            <Button
+              onClick={() => router.push('/cv')}
+              className="inline-flex items-center gap-2 bg-gray-900 hover:bg-gray-800"
+            >
+              <FileText className="h-4 w-4" />
+              View My CV
+            </Button>
           </div>
           <div>
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Skills</h3>

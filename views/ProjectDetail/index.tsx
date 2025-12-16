@@ -3,7 +3,7 @@
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 import { notFound, useParams } from 'next/navigation';
-import PROJECTS_DATA from '@/app/data/projects';
+import PROJECTS_DATA from '@/data/projects';
 // import RelatedBlogPosts from './RelatedBlogPosts';
 import CTASection from './CTASection';
 import ProjectSection from './ProjectSection';

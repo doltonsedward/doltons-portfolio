@@ -4,7 +4,7 @@ import { notFound, useParams } from 'next/navigation';
 import TalkMainContent from './TalkMainContent';
 import TalkSidebar from './TalkSidebar';
 import TalkHeader from './TalkHeader';
-import { TALKS_DATA } from '@/app/data/talks';
+import { TALKS_DATA } from '@/data/talks';
 import dayjs from 'dayjs';
 import { FilteredTalkData } from '@/app/talks/types';
 

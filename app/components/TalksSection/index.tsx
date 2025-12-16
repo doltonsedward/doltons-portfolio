@@ -7,7 +7,7 @@ import {
   ongoingTalks,
   pastTalks,
   getTalksWithStatus,
-} from '@/app/data/talks';
+} from '@/data/talks';
 import TalkHeader from './TalkHeader';
 import TalkStats from './TalkStats';
 import ContactMe from './ContactMe';
