@@ -1,13 +1,15 @@
 'use client';
 
+import { useRouter } from '@/routes/navigation';
+import { Button } from '@heroui/react';
 import Image from 'next/image';
-import { Button } from '@/components/ui/button';
 
 interface HeroSectionProps {
   onNavClick: (sectionId: string) => void;
 }
 
 export default function HeroSection({ onNavClick }: HeroSectionProps) {
+  const router = useRouter();
   return (
     <section id="home" className="px-6 py-16 lg:px-12 lg:py-24">
       <div className="constrain">
@@ -41,13 +43,24 @@ export default function HeroSection({ onNavClick }: HeroSectionProps) {
             <p className="text-lg text-gray-700 mb-8">
               Full Stack Developer & Creative Problem Solver
             </p>
-            <Button
-              size="lg"
-              className="bg-gray-900 hover:bg-gray-800"
-              onClick={() => onNavClick('projects')}
-            >
-              View My Work
-            </Button>
+            <div className="flex gap-2">
+              <Button
+                size="lg"
+                color="primary"
+                variant="solid"
+                onPress={() => onNavClick('projects')}
+              >
+                View My Work
+              </Button>
+              <Button
+                size="lg"
+                color="primary"
+                variant="bordered"
+                onPress={() => router.push('/cv')}
+              >
+                View My Cv
+              </Button>
+            </div>
           </div>
         </div>
       </div>

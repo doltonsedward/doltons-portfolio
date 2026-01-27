@@ -1,9 +1,9 @@
 'use client';
 
 import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
+import { useRouter } from '@/routes/navigation';
+import { Button } from '@heroui/react';
 import { FileText } from 'lucide-react';
-import { useRouter } from 'next/navigation';
 
 export default function AboutSection() {
   const router = useRouter();
@@ -26,8 +26,10 @@ export default function AboutSection() {
               the developer community.
             </p>
             <Button
-              onClick={() => router.push('/cv')}
-              className="inline-flex items-center gap-2 bg-gray-900 hover:bg-gray-800"
+              color="primary"
+              onPress={() => router.push('/cv')}
+              variant="shadow"
+              className="inline-flex items-center gap-2"
             >
               <FileText className="h-4 w-4" />
               View My CV

@@ -2,7 +2,8 @@
 
 import { Button } from '@/components/ui/button';
 import { Download, ArrowLeft } from 'lucide-react';
-import { useRouter } from 'next/navigation';
+
+import { useRouter } from '@/routes/navigation';
 import CVHeader from './CVHeader';
 import CVSummary from './CVSummary';
 import CVTechnicalSkills from './CVTechnicalSkills';
