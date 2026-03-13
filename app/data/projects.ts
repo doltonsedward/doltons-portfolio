@@ -2,6 +2,43 @@ import { ProjectDataType } from '../project/types';
 
 const PROJECTS_DATA: ProjectDataType[] = [
   {
+    id: 7, // Sesuaikan dengan urutan id terakhirmu
+    title: 'SchemaCraft',
+    slug: 'schema-craft',
+    shortDesc:
+      'A powerful visual database schema designer and mapper that transforms SQL-like syntax into interactive ER diagrams.',
+    fullDesc:
+      'SchemaCraft is a developer-centric tool designed to streamline database modeling. It allows users to write schema definitions in a dedicated code editor and instantly visualizes them as interactive, draggable Entity Relationship Diagrams (ERD). Built for clarity and speed, it helps developers map complex relationships, export diagrams for documentation, and manage database structures through a modern, side-by-side interface.',
+    stack: [
+      'Next.js',
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'React Flow', // Library umum untuk diagram/canvas seperti di gambar
+      'Monaco Editor', // Library umum untuk editor kode
+      'Lucide React',
+    ],
+    githubLink: 'https://github.com/dollong-workspace/db-schema-mapper',
+    linkToProject: 'https://schemacraft.vercel.app/', // Ganti jika ada link demo spesifik
+    image: '/assets/projects/schemacraft.png',
+    status: 'Completed',
+    duration: '4–6 weeks',
+    year: '2024–2025',
+    challenges: [
+      'Syntax Parsing: Implementing a custom parser to transform SQL/DBML-like strings into structured JSON data for diagram rendering.',
+      'Real-time Synchronization: Ensuring seamless, low-latency updates between the code editor and the visual canvas.',
+      'Diagram Auto-Layout: Engineering the logic for automatic line routing and relationship mapping to prevent overlapping UI elements.',
+      'State Management: Handling complex states for multiple tables, columns, and their interconnected references.',
+    ],
+    keyFeatures: [
+      'Live SQL/DBML Editor: Side-by-side view with syntax highlighting for real-time schema modeling.',
+      'Interactive ERD Canvas: Fully draggable and zoomable interface with interactive table nodes.',
+      'Relationship Mapping: Visual representation of One-to-Many and Many-to-Many relationships using intuitive connectors.',
+      'Export & Sharing: Features to export diagrams as images or `share schema configurations with team members.',
+      'Modern Developer UI: Equipped with Dark Mode support and a clean, high-fidelity aesthetic.',
+    ],
+  },
+  {
     id: 1,
     title: 'IT Lance',
     slug: 'it-lance',
