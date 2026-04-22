@@ -49,6 +49,8 @@ export default function WriterModePage() {
   const [activeTab, setActiveTab] = useState(CATEGORIES[0]);
   const [hoveredTab, setHoveredTab] = useState<string | null>(null);
 
+  const currentFocus = hoveredTab || activeTab.id;
+
   const handleEscape = () => {
     router.push('/');
   };
@@ -123,13 +125,15 @@ export default function WriterModePage() {
         </div>
 
         {/* Right Side: Menu Items */}
-        <div className="w-full md:w-1/2 flex flex-col justify-center items-end gap-6 md:gap-8 pr-4 md:pr-24">
+        <div
+          className="w-full md:w-1/2 flex flex-col justify-center items-end gap-6 md:gap-8 pr-4 md:pr-24"
+          onMouseLeave={() => setHoveredTab(null)}
+        >
           {CATEGORIES.map((cat, i) => (
             <motion.button
               key={cat.id}
               onClick={() => setActiveTab(cat)}
               onMouseEnter={() => setHoveredTab(cat.id)}
-              onMouseLeave={() => setHoveredTab(null)}
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: i * 0.1, type: 'spring', stiffness: 200 }}
@@ -155,17 +159,17 @@ export default function WriterModePage() {
 
               {/* Background slash effect on active/hover */}
               <AnimatePresence>
-                {(activeTab.id === cat.id || hoveredTab === cat.id) && (
+                {currentFocus === cat.id && (
                   <motion.div
-                    layoutId="menuHighlight"
-                    className={`absolute -inset-x-8 -inset-y-2 -z-10 p5-jagged opacity-100 transform skew-x-12 border-2 ${
+                    className={`absolute -inset-x-8 -inset-y-2 -z-10 p5-jagged transform skew-x-12 border-2 ${
                       activeTab.id === cat.id
                         ? 'p5-bg-black border-black'
                         : 'p5-bg-red border-red-800'
                     }`}
-                    initial={{ opacity: 0, scaleY: 0 }}
-                    animate={{ opacity: 1, scaleY: 1 }}
-                    exit={{ opacity: 0, scaleY: 0 }}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.15 }}
                   />
                 )}
               </AnimatePresence>
