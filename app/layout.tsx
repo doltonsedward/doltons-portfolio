@@ -3,8 +3,26 @@ import { HeroUIProvider } from '@heroui/react';
 import { GeistSans } from 'geist/font/sans';
 import { ToastProvider } from '@heroui/toast';
 import { GeistMono } from 'geist/font/mono';
+import { Bebas_Neue, Rubik_Mono_One, Syne } from 'next/font/google';
+import localFont from 'next/font/local';
 import './globals.css';
 import TopProgressBarProviders from './components/TopProgressBarProvider';
+
+const bebasNeue = Bebas_Neue({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-bebas',
+});
+const rubikMono = Rubik_Mono_One({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-rubik-mono',
+});
+const syne = Syne({ subsets: ['latin'], variable: '--font-syne' });
+const earwigFactory = localFont({
+  src: '../public/assets/fonts/earwig-factory-rg.otf',
+  variable: '--font-earwig',
+});
 
 export const metadata: Metadata = {
   title: 'Doltons Edward – Full Stack Developer | React, Node.js, React Native',
@@ -60,7 +78,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
+    <html
+      lang="en"
+      className={`${GeistSans.variable} ${GeistMono.variable} ${bebasNeue.variable} ${rubikMono.variable} ${syne.variable} ${earwigFactory.variable}`}
+    >
       <body className="font-sans antialiased">
         <HeroUIProvider>
           <ToastProvider />

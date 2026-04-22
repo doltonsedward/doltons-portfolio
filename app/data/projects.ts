@@ -2,7 +2,7 @@ import { ProjectDataType } from '../project/types';
 
 const PROJECTS_DATA: ProjectDataType[] = [
   {
-    id: 7, // Sesuaikan dengan urutan id terakhirmu
+    id: 7,
     title: 'SchemaCraft',
     slug: 'schema-craft',
     shortDesc:
@@ -217,6 +217,234 @@ const PROJECTS_DATA: ProjectDataType[] = [
       'Advanced filtering and search',
     ],
   },
-  // ...tambahkan project lain, gunakan default value kosong untuk field baru jika belum ada datanya...
+  {
+    id: 8,
+    title: 'Toraja Hill Stop',
+    slug: 'toraja-hill-stop',
+    shortDesc:
+      'A breathtaking digital presence for a hospitality business, featuring direct WhatsApp booking and live chat integration.',
+    fullDesc:
+      'Toraja Hill Stop is a modern, mobile-friendly landing page designed exclusively for guesthouses and homestays. Built to bypass expensive OTA commissions, it connects guests directly with the owner via WhatsApp. The project showcases a warm terracotta aesthetic with elegant typography, a stunning hero section, and Tawk.to live chat support. Engineered for blazing-fast performance with React and Vite, it delivers a premium user experience from inquiry to booking.',
+    stack: [
+      'React',
+      'Vite',
+      'Tailwind CSS',
+      'shadcn/ui',
+      'Supabase',
+      'Tawk.to',
+      'Lucide React',
+    ],
+    githubLink:
+      'https://github.com/dollong-workspace/toraja-hill-stop-landing-page',
+    linkToProject: 'https://www.torajahillstop.com/',
+    image: '/assets/projects/torajahillstop.png',
+    status: 'Completed',
+    duration: '1–2 weeks',
+    year: '2025',
+    challenges: [
+      'Eliminating OTA Dependency: Designing a seamless direct booking flow via WhatsApp to maximize owner revenue.',
+      'Performance Optimization: Achieving near-instant load times for high-quality mountain gallery images.',
+      'Aesthetic Alignment: Translating the physical charm of Toraja into a digital interface using elegant palettes and typography.',
+      'Real-time Engagement: Integrating and configuring Tawk.to for instant, zero-cost customer support.',
+    ],
+    keyFeatures: [
+      'Direct WhatsApp Booking: Bypasses 15-20% OTA commissions with a pre-formatted message system.',
+      'Exquisite Hero Section: Greets visitors with breathtaking mountain imagery and smooth hover effects.',
+      'Tawk.to Live Chat: Enables real-time visitor engagement and inquiry management on the go.',
+      'Performance & SEO Optimized: Built with semantic HTML, optimized meta tags, and loads in milliseconds.',
+    ],
+  },
+  {
+    id: 9,
+    title: 'Nutrilife',
+    slug: 'nutrilife',
+    shortDesc:
+      'A personalized health and wellness app focused on mindful nutrition and intuitive lifestyle tracking.',
+    fullDesc:
+      'Nutrilife is a modern health application designed to empower users with personalized dietary and wellness insights. Built with an intuitive and visually engaging interface, the app makes tracking daily nutrition, discovering healthy habits, and monitoring progress an effortless and motivating experience. The architecture leverages scalable, responsive UI components to ensure seamless interactions across all devices, turning complex health data into clear, actionable visual milestones.',
+    stack: [
+      'React',
+      'Next.js',
+      'Tailwind CSS',
+      'TypeScript',
+      'Framer Motion',
+      'Node.js',
+    ],
+    githubLink: 'https://github.com/dollong-workspace/nutrilife',
+    linkToProject: 'https://app-nutrilife.lovable.app',
+    image: '/assets/projects/nutrilife.png',
+    status: 'Completed',
+    duration: '3–4 weeks',
+    year: '2025',
+    challenges: [
+      'Data Visualization: Creating easy-to-understand charts and actionable metrics for daily nutritional intake.',
+      'User Engagement: Designing an inspiring aesthetic that motivates daily check-ins without feeling monotonous.',
+      'Accessibility & Responsiveness: Ensuring health data tracking is seamless and comfortable on mobile devices.',
+      'State Management: Synchronizing personalized user records to reflect real-time lifestyle milestones safely.',
+    ],
+    keyFeatures: [
+      'Personalized Dashboard: A visually stunning overview of daily progress, calories, and macros.',
+      'Interactive Goal Tracking: Smooth micro-animations and encouraging feedback for every health milestone.',
+      'Responsive UI: Adaptive layouts and mobile-first experience for tracking on the go.',
+      'Actionable Insights: Transforms raw data into motivating visual summaries and recommendations.',
+    ],
+  },
+  {
+    id: 10,
+    title: 'Crumble Cookies',
+    slug: 'crumble-cookies',
+    shortDesc:
+      'A delightful eCommerce landing page designed to showcase artisanal baked goods and boost online orders.',
+    fullDesc:
+      'Crumble Cookies is an appetizing web project created to present premium, freshly baked cookies in the digital space. The design heavily emphasizes high-quality product imagery and a mouth-watering aesthetic to tempt visitors. Built with a smooth, interactive UI, it simplifies the browsing and ordering experience, making it irresistible for customers to explore different cookie flavors and add them to their cart. This project highlights frontend capabilities in creating engaging, sales-driven user interfaces.',
+    stack: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    githubLink: 'https://github.com/dollong-workspace/crumble-cookies',
+    linkToProject: '#',
+    image: '/assets/projects/crumble-cookies.png', // Sesuaikan gambar jika ada
+    status: 'In Progress',
+    duration: '1–2 weeks',
+    year: '2025',
+    challenges: [
+      'Visual Appeal: Crafting a warm, inviting UI that effectively translates the appeal of fresh baked goods through a screen.',
+      'Interactive Micro-animations: Implementing seamless hover states and entering animations to make the browsing experience feel premium.',
+      'Responsive Product Grids: Ensuring the layout adapts perfectly from desktop multi-column gallery to a smooth mobile scrolling experience.',
+    ],
+    keyFeatures: [
+      "Appetizing Hero Section: A visually striking introduction that instantly captures the brand's delicious identity.",
+      'Dynamic Product Showcase: Smoothly animated grid displaying current cookie flavors and seasonal specials.',
+      'Intuitive Layout: Clean, accessible navigation designed to guide visitors naturally toward the ordering process.',
+    ],
+  },
+  {
+    id: 11,
+    title: 'Dapur Nusantara',
+    slug: 'dapur-nusantara',
+    shortDesc:
+      'A vibrant digital catalog and ordering interface celebrating authentic Indonesian culinary heritage.',
+    fullDesc:
+      "Dapur Nusantara brings the rich flavors of traditional Indonesian cuisine to the forefront of the modern web. This project serves as an interactive restaurant menu and digital storefront, designed to tantalize users with vibrant visuals of classic dishes. The interface balances traditional cultural aesthetics with contemporary web design principles, offering smooth category filtering and detailed dish descriptions to enhance the customer's digital dining journey.",
+    stack: ['React', 'Next.js', 'Tailwind CSS'],
+    githubLink: 'https://github.com/dollong-workspace/dapur-nusantara',
+    linkToProject: '#',
+    image: '/assets/projects/dapur-nusantara.png', // Sesuaikan gambar jika ada
+    status: 'In Progress',
+    duration: '2–3 weeks',
+    year: '2025',
+    challenges: [
+      'Cultural Aesthetic Translation: Blending traditional Indonesian design elements with a clean, modern user interface.',
+      'Menu Categorization: Building an intuitive filtering system that handles diverse food categories (heavy meals, snacks, traditional beverages) smoothly.',
+      'Image Optimization: Ensuring high-resolution food photography loads quickly without compromising visual quality.',
+    ],
+    keyFeatures: [
+      'Interactive Menu Filtering: Quick and seamless category switching for an effortless browsing experience.',
+      'Rich Visual Presentation: High-fidelity image displays accompanied by engaging descriptions of the region-specific dishes.',
+      'Responsive Mobile-First Design: Tailored for on-the-go users looking to browse or order food comfortably from their phones.',
+    ],
+  },
+  {
+    id: 12,
+    title: 'Kopi Kita',
+    slug: 'kopi-kita',
+    shortDesc:
+      'A sleek, atmospheric landing page for a modern local coffee shop, designed to attract local patrons.',
+    fullDesc:
+      "Kopi Kita is a minimalist and atmospheric digital storefront designed for a contemporary local coffee shop. Recognizing that a coffee shop is as much about the vibe as it is about the coffee, the project aims to digitally reflect the physical store's ambiance. It features a dark-themed or warm palette (depending on the store's branding), showcasing the coffee menu, barista specials, and the shop's cozy interior through fluid layouts and refined typography.",
+    stack: ['React', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
+    githubLink: 'https://github.com/dollong-workspace/kopi-kita-landing-page',
+    linkToProject: '#',
+    image: '/assets/projects/kopi-kita.png', // Sesuaikan gambar jika ada
+    status: 'In Progress',
+    duration: '1–2 weeks',
+    year: '2025',
+    challenges: [
+      'Ambiance Recreation: Capturing the cozy, intimate feel of a coffee shop through digital color palettes and font choices.',
+      'Content Rhythm: Designing a scrolling experience that naturally paces the user through the menu, about section, and location details.',
+      'Performance: Keeping the site lightweight and fast while utilizing high-quality background images and subtle entrance animations.',
+    ],
+    keyFeatures: [
+      'Immersive Hero Banner: Sets the mood instantly with atmospheric imagery and elegant typography.',
+      'Curated Digital Menu: Carefully structured sections highlighting signature roasts, pastries, and barista specials.',
+      'Location & Hours Hub: Clear, accessible practical information to drive foot traffic to the physical store.',
+    ],
+  },
+  {
+    id: 13,
+    title: 'Cuci Mobil Kilat',
+    slug: 'cuci-mobil-kilat',
+    shortDesc:
+      'A fast, streamlined booking platform designed for a local express car wash service.',
+    fullDesc:
+      'Cuci Mobil Kilat is a digital booking solution tailored for a local car wash striving to modernize its appointment system. Built to minimize wait times and maximize operational efficiency, the app allows users to quickly select wash packages, pick available time slots, and confirm bookings on the go. Its bold, high-contrast UI ensures readability even under bright outdoor conditions, making it the perfect pit-stop companion for busy car owners.',
+    stack: ['React', 'Tailwind CSS'],
+    githubLink: 'https://github.com/dollong-workspace/cuci-mobil-kilat',
+    linkToProject: '#',
+    image: '/assets/projects/cuci-mobil-kilat.png', // Sesuaikan gambar jika ada
+    status: 'In Progress',
+    duration: '1–2 weeks',
+    year: '2025',
+    challenges: [
+      'Streamlined Booking Flow: Reducing the number of clicks required from service selection to confirmed appointment.',
+      'Time Slot Management: Creating an intuitive interface to display available working hours and prevent double-booking.',
+      'Mobile Accessibility: Ensuring the UI components are chunky, readable, and perfectly tap-able for users accessing the site from their phones.',
+    ],
+    keyFeatures: [
+      'Express Booking: A multi-step form that captures vehicle details and service choices in seconds.',
+      'Service Packages Hub: A clear, comparative display of available wash packages and pricing.',
+      'Responsive Outdoor UI: High-contrast design elements adapted for quick visibility on bright screens.',
+    ],
+  },
+  {
+    id: 14,
+    title: 'Bakmi Jago',
+    slug: 'bakmi-jago',
+    shortDesc:
+      'A charming landing page designed to digitalize and promote a beloved local noodle shop.',
+    fullDesc:
+      "Bakmi Jago brings the warmth and authenticity of a legendary local noodle shop to the digital era. The landing page acts as an inviting digital storefront that highlights the shop's signature dishes, history, and customer testimonials. Through mouth-watering photography and warm color schemes, the site successfully captures the comforting essence of a hot bowl of noodles, driving both foot traffic and online orders.",
+    stack: ['React', 'Next.js', 'Tailwind CSS'],
+    githubLink: 'https://github.com/dollong-workspace/bakmi-jago-landing-page',
+    linkToProject: '#',
+    image: '/assets/projects/bakmi-jago.png', // Sesuaikan gambar jika ada
+    status: 'In Progress',
+    duration: '1–2 weeks',
+    year: '2025',
+    challenges: [
+      'Visual Storytelling: Conveying the rich aroma and taste of traditional noodles entirely through digital imagery and typography.',
+      'Menu Display: Organizing a diverse menu of toppings, noodle types, and side dishes into an easy-to-read format.',
+      'Brand Identity: Maintaining the grassroots, authentic feel of the business while using modern web frameworks.',
+    ],
+    keyFeatures: [
+      'Hero Showcase: A full-width, appetizing introduction to the shop\'s signature "Bakmi Spesial".',
+      'Testimonial Carousel: Building trust by highlighting positive reviews from long-time customers.',
+      'Interactive Menu: An easily navigable section detailing prices, variations, and popular combos.',
+    ],
+  },
+  {
+    id: 15,
+    title: 'WA Directly',
+    slug: 'wa-directly',
+    shortDesc:
+      'A simple, privacy-focused tool to start WhatsApp conversations instantly without saving phone numbers.',
+    fullDesc:
+      'WA Directly was built to solve a common annoyance: saving temporary contacts just to send a single WhatsApp message. It provides a lightning-fast, zero-friction interface where users simply enter a phone number and country code to click through directly to the WhatsApp app. Designed with a strict privacy-first approach, it stores absolutely zero user data, utilizing a secure tech stack to act merely as a bridge to the official WhatsApp API.',
+    stack: ['React', 'Vite', 'TypeScript', 'Tailwind CSS', 'shadcn/ui'],
+    githubLink: 'https://github.com/dollong-workspace/wa-directly',
+    linkToProject: 'https://wa-directly.lovable.app',
+    image: '/assets/projects/wa-directly.png', // Sesuaikan gambar jika ada
+    status: 'Completed',
+    duration: '1 week',
+    year: '2025',
+    challenges: [
+      'Frictionless UX: Designing a single-purpose interface that does its one job perfectly without any bloated features.',
+      'Input Validation: Handling diverse international phone number formats and sanitizing user input seamlessly.',
+      'Complete Privacy: Developing a frontend-only architecture to ensure no data is ever sent to a database or tracked.',
+    ],
+    keyFeatures: [
+      'Instant Redirection: Bypasses the contact-saving process by utilizing the official wa.me API.',
+      'Intelligent Formatting: Automatically handles leading zeros and formatting based on selected country codes.',
+      'Zero Trace Architecture: A fully stateless application guaranteeing 100% user privacy and no analytics tracking.',
+    ],
+  },
 ];
+
 export default PROJECTS_DATA;

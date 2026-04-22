@@ -9,6 +9,7 @@ import ProjectsSection from './components/ProjectSection';
 import ExperienceSection from './components/ExperienceSection';
 import TalksSection from './components/TalksSection';
 import ContactSection from './components/ContactSection';
+import SecretTriggerSection from './components/SecretTriggerSection';
 
 const sections = [
   'home',
@@ -67,6 +68,7 @@ export default function Portfolio() {
         <AboutSection />
         <ProjectsSection />
         <TalksSection />
+        <SecretTriggerSection />
         <ExperienceSection />
         <ContactSection />
       </main>
