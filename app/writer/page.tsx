@@ -147,16 +147,23 @@ export default function WriterModePage() {
         {/* Left Side: Dynamic Info Panel */}
         <div className="w-full md:w-1/2 h-full flex flex-col justify-center items-start md:pl-16">
           <motion.div
-            initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            className="mb-12"
+            initial={{ x: -100, opacity: 0, rotate: -5 }}
+            animate={{ x: 0, opacity: 1, rotate: 0 }}
+            className="mb-16 md:mb-24 relative z-20"
           >
-            <h1 className="font-p5-ransom text-7xl md:text-9xl text-white drop-shadow-[5px_5px_0_#111] uppercase leading-[0.8] tracking-tighter">
-              <span className="block transform rotate-2">DOLLONG</span>
-              <span className="block transform -rotate-2 p5-bg-black w-max px-4 pb-2 p5-text-red mt-2">
-                THE WRITER
-              </span>
-            </h1>
+            <div className="relative inline-block mt-8">
+              {/* The Foundation Name - Massive, bold, and clean */}
+              <h1 className="font-bebas text-[7rem] md:text-[12rem] text-white leading-[0.8] tracking-tighter uppercase transform -skew-x-6 drop-shadow-[8px_8px_0_#111]">
+                DOLLONG
+              </h1>
+
+              {/* The 'Writer' Layer - Plastered over the name */}
+              <div className="absolute -bottom-4 md:-bottom-6 right-2 md:-right-20 transform -rotate-3 cursor-default hover:scale-105 transition-transform duration-200">
+                <span className="relative block font-p5-ransom text-5xl md:text-7xl text-[#E00000] drop-shadow-[6px_6px_0_#111] drop-shadow-[-2px_-2px_0_#FFF]">
+                  THE WRITER
+                </span>
+              </div>
+            </div>
           </motion.div>
 
           <AnimatePresence mode="wait">
