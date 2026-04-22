@@ -149,26 +149,14 @@ export default function SecretTriggerSection() {
                 transition={{ type: 'spring', bounce: 0.6 }}
                 className="absolute top-24 w-max font-p5-ransom text-lg md:text-3xl text-white uppercase tracking-widest z-50 flex gap-2"
               >
-                <span className="p5-bg-black px-3 py-1 transform rotate-2 p5-jagged border border-white">
-                  Wake
+                <span className="text-white transform -rotate-2 drop-shadow-[3px_3px_0_#111]">
+                  WAKE UP,
                 </span>
-                <span className="p5-bg-black px-3 py-1 transform -rotate-3 p5-jagged border border-white">
-                  Up,
+                <span className="text-[#E00000] transform rotate-1 drop-shadow-[3px_3px_0_#111]">
+                  GET UP,
                 </span>
-                <span className="p5-bg-black px-3 py-1 transform rotate-1 p5-text-red p5-jagged border border-red-500">
-                  Get
-                </span>
-                <span className="p5-bg-black px-3 py-1 transform -rotate-2 p5-text-red p5-jagged border border-red-500">
-                  Up,
-                </span>
-                <span className="p5-bg-black px-3 py-1 transform rotate-3 p5-jagged border border-white">
-                  Get
-                </span>
-                <span className="p5-bg-black px-3 py-1 transform -rotate-1 p5-jagged border border-white">
-                  Out
-                </span>
-                <span className="p5-bg-black px-3 py-1 transform rotate-2 p5-jagged border border-white">
-                  There
+                <span className="text-white transform -rotate-1 drop-shadow-[3px_3px_0_#111]">
+                  GET OUT THERE
                 </span>
               </motion.div>
             )}
