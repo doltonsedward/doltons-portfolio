@@ -62,10 +62,10 @@ export default function WriterModePage() {
 
       {/* Escape Button */}
       <motion.button
-        whileHover={{ scale: 1.1, rotate: -2 }}
+        whileHover={{ scale: 1.1, rotate: 2 }}
         whileTap={{ scale: 0.95 }}
         onClick={handleEscape}
-        className="absolute top-6 left-6 md:top-12 md:left-12 z-50 p5-bg-black text-white px-4 md:px-8 py-2 md:py-4 p5-jagged font-bebas text-xl md:text-3xl flex items-center gap-2 hover:bg-white hover:text-black transition-colors border-4 border-transparent hover:border-black shadow-[4px_4px_0_rgba(0,0,0,0.5)]"
+        className="absolute top-6 right-6 md:top-12 md:right-12 z-50 p5-bg-black text-white px-4 md:px-8 py-2 md:py-4 p5-jagged font-bebas text-xl md:text-3xl flex items-center gap-2 hover:bg-white hover:text-black transition-colors border-4 border-transparent hover:border-black shadow-[4px_4px_0_rgba(0,0,0,0.5)]"
       >
         <ArrowLeft size={28} className="hidden md:block" /> RETURN
       </motion.button>
@@ -133,10 +133,10 @@ export default function WriterModePage() {
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: i * 0.1, type: 'spring', stiffness: 200 }}
-              className={`relative font-p5-ransom text-6xl md:text-8xl uppercase tracking-wider text-right transition-all duration-200 z-10 ${
+              className={`relative font-p5-ransom text-5xl md:text-8xl uppercase tracking-wider text-right transition-all duration-200 z-10 text-white ${
                 activeTab.id === cat.id
-                  ? 'text-white'
-                  : 'text-black hover:text-white'
+                  ? 'opacity-100 scale-[1.02]'
+                  : 'opacity-60 hover:opacity-100 hover:scale-[1.02]'
               }`}
             >
               {/* Star graphic to indicate selected */}
@@ -146,7 +146,7 @@ export default function WriterModePage() {
                     initial={{ scale: 0, rotate: -180 }}
                     animate={{ scale: 1, rotate: 0 }}
                     exit={{ scale: 0, rotate: 180 }}
-                    className="absolute -left-16 md:-left-20 top-1/2 -translate-y-1/2 text-[#E00000] text-5xl md:text-7xl drop-shadow-[2px_2px_0_#FFF]"
+                    className="absolute -left-12 md:-left-20 top-1/2 -translate-y-1/2 text-[#E00000] text-5xl md:text-7xl drop-shadow-[2px_2px_0_#FFF]"
                   >
                     ★
                   </motion.div>
@@ -158,10 +158,10 @@ export default function WriterModePage() {
                 {(activeTab.id === cat.id || hoveredTab === cat.id) && (
                   <motion.div
                     layoutId="menuHighlight"
-                    className={`absolute -inset-x-8 -inset-y-2 -z-10 p5-jagged opacity-100 transform skew-x-12 border-2 border-black ${
+                    className={`absolute -inset-x-8 -inset-y-2 -z-10 p5-jagged opacity-100 transform skew-x-12 border-2 ${
                       activeTab.id === cat.id
-                        ? 'p5-bg-black'
-                        : 'p5-bg-red mix-blend-color-burn'
+                        ? 'p5-bg-black border-black'
+                        : 'p5-bg-red border-red-800'
                     }`}
                     initial={{ opacity: 0, scaleY: 0 }}
                     animate={{ opacity: 1, scaleY: 1 }}
@@ -171,7 +171,7 @@ export default function WriterModePage() {
               </AnimatePresence>
 
               <span
-                className={`block transform ${cat.rotation} drop-shadow-[3px_3px_0_#FFF] ${activeTab.id === cat.id ? 'drop-shadow-[3px_3px_0_#111]' : ''}`}
+                className={`block transform ${cat.rotation} drop-shadow-[4px_4px_0_#111] transition-transform duration-200`}
               >
                 {cat.title}
               </span>
