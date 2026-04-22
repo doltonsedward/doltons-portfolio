@@ -152,9 +152,9 @@ export default function WriterModePage() {
             className="mb-12"
           >
             <h1 className="font-p5-ransom text-7xl md:text-9xl text-white drop-shadow-[5px_5px_0_#111] uppercase leading-[0.8] tracking-tighter">
-              <span className="block transform rotate-2">WRITER</span>
+              <span className="block transform rotate-2">DOLLONG</span>
               <span className="block transform -rotate-2 p5-bg-black w-max px-4 pb-2 p5-text-red mt-2">
-                PERSONA
+                THE WRITER
               </span>
             </h1>
           </motion.div>
