@@ -10,6 +10,7 @@ import ExperienceSection from './components/ExperienceSection';
 import TalksSection from './components/TalksSection';
 import ContactSection from './components/ContactSection';
 import SecretTriggerSection from './components/SecretTriggerSection';
+import ReturnCurtainTransition from './components/ReturnCurtainTransition';
 
 const sections = [
   'home',
@@ -60,6 +61,7 @@ export default function Portfolio() {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <ReturnCurtainTransition />
       <MobileMenu />
       <Sidebar activeSection={activeSection} onNavClick={handleNavClick} />
 

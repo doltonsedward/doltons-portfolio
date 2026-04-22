@@ -48,11 +48,18 @@ export default function WriterModePage() {
   const router = useRouter();
   const [activeTab, setActiveTab] = useState(CATEGORIES[0]);
   const [hoveredTab, setHoveredTab] = useState<string | null>(null);
+  const [isExiting, setIsExiting] = useState(false);
 
   const currentFocus = hoveredTab || activeTab.id;
 
   const handleEscape = () => {
-    router.push('/');
+    setIsExiting(true);
+    if (typeof window !== 'undefined') {
+      sessionStorage.setItem('returnFromWriter', 'true');
+    }
+    setTimeout(() => {
+      router.push('/');
+    }, 2500);
   };
 
   return (
@@ -61,6 +68,69 @@ export default function WriterModePage() {
       <div className="absolute top-0 right-0 w-full md:w-3/4 h-full p5-bg-black p5-jagged opacity-90 transform translate-x-32" />
       <div className="absolute top-1/4 left-10 w-96 h-96 p5-bg-black p5-halftone-light opacity-20 p5-jagged transform rotate-[25deg]" />
       <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-white p5-jagged p5-halftone-light opacity-10 transform -translate-x-10 translate-y-10" />
+
+      {/* Exiting Overlay */}
+      <AnimatePresence>
+        {isExiting && (
+          <div className="fixed inset-0 z-[100] pointer-events-none flex flex-col">
+            {/* Top Curtain Slam */}
+            <motion.div
+              initial={{ y: '-100%', skewY: -2, borderBottomColor: '#E00000' }}
+              animate={{ y: 0, skewY: 0, borderBottomColor: '#111111' }}
+              transition={{
+                duration: 0.4,
+                ease: 'easeIn',
+                borderBottomColor: { delay: 0.35, duration: 0.1 },
+              }}
+              className="absolute top-0 left-0 w-full h-[55vh] bg-[#111] z-10 border-b-[12px]"
+            />
+            {/* Bottom Curtain Slam */}
+            <motion.div
+              initial={{ y: '100%', skewY: -2, borderTopColor: '#E00000' }}
+              animate={{ y: 0, skewY: 0, borderTopColor: '#111111' }}
+              transition={{
+                duration: 0.4,
+                ease: 'easeIn',
+                borderTopColor: { delay: 0.35, duration: 0.1 },
+              }}
+              className="absolute bottom-0 left-0 w-full h-[55vh] bg-[#111] z-10 border-t-[12px]"
+            />
+
+            {/* Loading Content */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8, rotate: -2 }}
+              animate={{ opacity: 1, scale: 1, rotate: 0 }}
+              transition={{ delay: 0.6, type: 'spring' }}
+              className="absolute inset-0 z-20 flex flex-col items-center justify-center pointer-events-none"
+            >
+              <h1 className="font-p5-ransom text-5xl md:text-8xl text-center uppercase tracking-widest flex flex-col gap-4 mt-8">
+                <span className="text-white block rotate-2">BACK TO</span>
+                <span className="text-[#E00000] block -rotate-2">REALITY</span>
+              </h1>
+
+              {/* 3 Bouncing Loading Stars */}
+              <div className="flex gap-8 mt-12">
+                {[0, 1, 2].map((i) => (
+                  <motion.div
+                    key={i}
+                    initial={{ y: 0 }}
+                    animate={{ y: [-20, 0] }}
+                    transition={{
+                      duration: 0.5,
+                      repeat: Infinity,
+                      repeatType: 'reverse',
+                      delay: i * 0.15,
+                    }}
+                    className="text-[#E00000] text-6xl drop-shadow-[2px_2px_0_#FFF]"
+                  >
+                    ★
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
 
       {/* Escape Button */}
       <motion.button
